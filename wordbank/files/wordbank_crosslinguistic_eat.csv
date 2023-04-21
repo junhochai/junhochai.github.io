@@ -1,0 +1,658 @@
+downloaded,language,measure,uni_lemma,words,age,prop
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",16,0.05
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",17,0.2
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",18,0.29
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",19,0.27
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",20,0.49
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",21,0.55
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",22,0.53
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",23,0.62
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",24,0.65
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",25,0.84
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",26,0.84
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",27,0.91
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",28,0.92
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",29,0.95
+2023-04-18,Cantonese,produces,EAT,"食, 食飯",30,0.95
+2023-04-18,Croatian,produces,EAT,jesti,8,0
+2023-04-18,Croatian,produces,EAT,jesti,9,0
+2023-04-18,Croatian,produces,EAT,jesti,10,0.05
+2023-04-18,Croatian,produces,EAT,jesti,11,0
+2023-04-18,Croatian,produces,EAT,jesti,12,0
+2023-04-18,Croatian,produces,EAT,jesti,13,0.03
+2023-04-18,Croatian,produces,EAT,jesti,14,0.11
+2023-04-18,Croatian,produces,EAT,jesti,15,0.04
+2023-04-18,Croatian,produces,EAT,jesti,16,0.26
+2023-04-18,Croatian,produces,EAT,jesti,17,0.2
+2023-04-18,Croatian,produces,EAT,jesti,18,0.36
+2023-04-18,Croatian,produces,EAT,jesti,19,0.48
+2023-04-18,Croatian,produces,EAT,jesti,20,0.46
+2023-04-18,Croatian,produces,EAT,jesti,21,0.45
+2023-04-18,Croatian,produces,EAT,jesti,22,0.46
+2023-04-18,Croatian,produces,EAT,jesti,23,0.65
+2023-04-18,Croatian,produces,EAT,jesti,24,0.8
+2023-04-18,Croatian,produces,EAT,jesti,25,0.7
+2023-04-18,Croatian,produces,EAT,jesti,26,0.79
+2023-04-18,Croatian,produces,EAT,jesti,27,0.88
+2023-04-18,Croatian,produces,EAT,jesti,28,0.86
+2023-04-18,Croatian,produces,EAT,jesti,29,0.89
+2023-04-18,Croatian,produces,EAT,jesti,30,0.93
+2023-04-18,Danish,produces,EAT,spise,8,0
+2023-04-18,Danish,produces,EAT,spise,9,0
+2023-04-18,Danish,produces,EAT,spise,10,0
+2023-04-18,Danish,produces,EAT,spise,11,0
+2023-04-18,Danish,produces,EAT,spise,12,0.01
+2023-04-18,Danish,produces,EAT,spise,13,0
+2023-04-18,Danish,produces,EAT,spise,14,0.02
+2023-04-18,Danish,produces,EAT,spise,15,0.02
+2023-04-18,Danish,produces,EAT,spise,16,0.05
+2023-04-18,Danish,produces,EAT,spise,17,0.08
+2023-04-18,Danish,produces,EAT,spise,18,0.16
+2023-04-18,Danish,produces,EAT,spise,19,0.14
+2023-04-18,Danish,produces,EAT,spise,20,0.35
+2023-04-18,Danish,produces,EAT,spise,21,0.35
+2023-04-18,Danish,produces,EAT,spise,22,0.53
+2023-04-18,Danish,produces,EAT,spise,23,0.54
+2023-04-18,Danish,produces,EAT,spise,24,0.7
+2023-04-18,Danish,produces,EAT,spise,25,0.73
+2023-04-18,Danish,produces,EAT,spise,26,0.82
+2023-04-18,Danish,produces,EAT,spise,27,0.88
+2023-04-18,Danish,produces,EAT,spise,28,0.86
+2023-04-18,Danish,produces,EAT,spise,29,0.88
+2023-04-18,Danish,produces,EAT,spise,30,0.93
+2023-04-18,Danish,produces,EAT,spise,31,0.96
+2023-04-18,Danish,produces,EAT,spise,32,0.98
+2023-04-18,Danish,produces,EAT,spise,33,0.96
+2023-04-18,Danish,produces,EAT,spise,34,0.99
+2023-04-18,Danish,produces,EAT,spise,35,1
+2023-04-18,Danish,produces,EAT,spise,36,0.99
+2023-04-18,English (American),produces,EAT,eat,8,0.02
+2023-04-18,English (American),produces,EAT,eat,9,0.01
+2023-04-18,English (American),produces,EAT,eat,10,0.01
+2023-04-18,English (American),produces,EAT,eat,11,0.04
+2023-04-18,English (American),produces,EAT,eat,12,0.05
+2023-04-18,English (American),produces,EAT,eat,13,0.07
+2023-04-18,English (American),produces,EAT,eat,14,0.09
+2023-04-18,English (American),produces,EAT,eat,15,0.14
+2023-04-18,English (American),produces,EAT,eat,16,0.16
+2023-04-18,English (American),produces,EAT,eat,17,0.21
+2023-04-18,English (American),produces,EAT,eat,18,0.3
+2023-04-18,English (American),produces,EAT,eat,19,0.47
+2023-04-18,English (American),produces,EAT,eat,20,0.47
+2023-04-18,English (American),produces,EAT,eat,21,0.55
+2023-04-18,English (American),produces,EAT,eat,22,0.66
+2023-04-18,English (American),produces,EAT,eat,23,0.68
+2023-04-18,English (American),produces,EAT,eat,24,0.74
+2023-04-18,English (American),produces,EAT,eat,25,0.83
+2023-04-18,English (American),produces,EAT,eat,26,0.82
+2023-04-18,English (American),produces,EAT,eat,27,0.86
+2023-04-18,English (American),produces,EAT,eat,28,0.94
+2023-04-18,English (American),produces,EAT,eat,29,0.89
+2023-04-18,English (American),produces,EAT,eat,30,0.89
+2023-04-18,French (Quebecois),produces,EAT,manger,8,0
+2023-04-18,French (Quebecois),produces,EAT,manger,9,0
+2023-04-18,French (Quebecois),produces,EAT,manger,10,0
+2023-04-18,French (Quebecois),produces,EAT,manger,11,0
+2023-04-18,French (Quebecois),produces,EAT,manger,12,0.01
+2023-04-18,French (Quebecois),produces,EAT,manger,13,0.01
+2023-04-18,French (Quebecois),produces,EAT,manger,14,0
+2023-04-18,French (Quebecois),produces,EAT,manger,15,0.06
+2023-04-18,French (Quebecois),produces,EAT,manger,16,0.06
+2023-04-18,French (Quebecois),produces,EAT,manger,17,0.19
+2023-04-18,French (Quebecois),produces,EAT,manger,18,0.24
+2023-04-18,French (Quebecois),produces,EAT,manger,19,0.35
+2023-04-18,French (Quebecois),produces,EAT,manger,20,0.45
+2023-04-18,French (Quebecois),produces,EAT,manger,21,0.58
+2023-04-18,French (Quebecois),produces,EAT,manger,22,0.59
+2023-04-18,French (Quebecois),produces,EAT,manger,23,0.78
+2023-04-18,French (Quebecois),produces,EAT,manger,24,0.73
+2023-04-18,French (Quebecois),produces,EAT,manger,25,0.8
+2023-04-18,French (Quebecois),produces,EAT,manger,26,0.84
+2023-04-18,French (Quebecois),produces,EAT,manger,27,0.92
+2023-04-18,French (Quebecois),produces,EAT,manger,28,0.92
+2023-04-18,French (Quebecois),produces,EAT,manger,29,0.98
+2023-04-18,French (Quebecois),produces,EAT,manger,30,0.84
+2023-04-18,German,produces,EAT,essen,18,0.25
+2023-04-18,German,produces,EAT,essen,19,0.32
+2023-04-18,German,produces,EAT,essen,20,0.3
+2023-04-18,German,produces,EAT,essen,21,0.45
+2023-04-18,German,produces,EAT,essen,22,0.56
+2023-04-18,German,produces,EAT,essen,23,0.71
+2023-04-18,German,produces,EAT,essen,24,0.7
+2023-04-18,German,produces,EAT,essen,25,0.72
+2023-04-18,German,produces,EAT,essen,26,0.85
+2023-04-18,German,produces,EAT,essen,27,0.82
+2023-04-18,German,produces,EAT,essen,28,0.91
+2023-04-18,German,produces,EAT,essen,29,0.9
+2023-04-18,German,produces,EAT,essen,30,0.96
+2023-04-18,Hebrew,produces,EAT,לאכול,11,0
+2023-04-18,Hebrew,produces,EAT,לאכול,12,0
+2023-04-18,Hebrew,produces,EAT,לאכול,13,0.25
+2023-04-18,Hebrew,produces,EAT,לאכול,14,0
+2023-04-18,Hebrew,produces,EAT,לאכול,15,0
+2023-04-18,Hebrew,produces,EAT,לאכול,16,0.17
+2023-04-18,Hebrew,produces,EAT,לאכול,17,0
+2023-04-18,Hebrew,produces,EAT,לאכול,19,0.5
+2023-04-18,Hebrew,produces,EAT,לאכול,20,0.44
+2023-04-18,Hebrew,produces,EAT,לאכול,21,0.75
+2023-04-18,Hebrew,produces,EAT,לאכול,22,1
+2023-04-18,Hebrew,produces,EAT,לאכול,23,0.57
+2023-04-18,Hebrew,produces,EAT,לאכול,24,0.82
+2023-04-18,Hebrew,produces,EAT,לאכול,25,0.86
+2023-04-18,Hebrew,produces,EAT,לאכול,26,0.89
+2023-04-18,Hebrew,produces,EAT,לאכול,27,0.9
+2023-04-18,Hebrew,produces,EAT,לאכול,28,0.91
+2023-04-18,Hebrew,produces,EAT,לאכול,29,0.98
+2023-04-18,Hebrew,produces,EAT,לאכול,30,0.89
+2023-04-18,Hebrew,produces,EAT,לאכול,31,0.97
+2023-04-18,Hebrew,produces,EAT,לאכול,32,0.97
+2023-04-18,Hebrew,produces,EAT,לאכול,33,0.9
+2023-04-18,Hebrew,produces,EAT,לאכול,34,0.96
+2023-04-18,Hebrew,produces,EAT,לאכול,35,0.78
+2023-04-18,Hebrew,produces,EAT,לאכול,36,0.8
+2023-04-18,Italian,produces,EAT,mangiare,7,0
+2023-04-18,Italian,produces,EAT,mangiare,8,0
+2023-04-18,Italian,produces,EAT,mangiare,9,0.03
+2023-04-18,Italian,produces,EAT,mangiare,10,0
+2023-04-18,Italian,produces,EAT,mangiare,11,0
+2023-04-18,Italian,produces,EAT,mangiare,12,0
+2023-04-18,Italian,produces,EAT,mangiare,13,0
+2023-04-18,Italian,produces,EAT,mangiare,14,0.03
+2023-04-18,Italian,produces,EAT,mangiare,15,0.03
+2023-04-18,Italian,produces,EAT,mangiare,16,0
+2023-04-18,Italian,produces,EAT,mangiare,17,0.12
+2023-04-18,Italian,produces,EAT,mangiare,18,0.16
+2023-04-18,Italian,produces,EAT,mangiare,19,0.16
+2023-04-18,Italian,produces,EAT,mangiare,20,0.18
+2023-04-18,Italian,produces,EAT,mangiare,21,0.33
+2023-04-18,Italian,produces,EAT,mangiare,22,0.44
+2023-04-18,Italian,produces,EAT,mangiare,23,0.59
+2023-04-18,Italian,produces,EAT,mangiare,24,0.66
+2023-04-18,Italian,produces,EAT,mangiare,25,0.79
+2023-04-18,Italian,produces,EAT,mangiare,26,0.78
+2023-04-18,Italian,produces,EAT,mangiare,27,0.74
+2023-04-18,Italian,produces,EAT,mangiare,28,0.86
+2023-04-18,Italian,produces,EAT,mangiare,29,0.86
+2023-04-18,Italian,produces,EAT,mangiare,30,0.91
+2023-04-18,Italian,produces,EAT,mangiare,31,0.84
+2023-04-18,Italian,produces,EAT,mangiare,32,0.91
+2023-04-18,Italian,produces,EAT,mangiare,33,1
+2023-04-18,Italian,produces,EAT,mangiare,34,1
+2023-04-18,Italian,produces,EAT,mangiare,35,0.93
+2023-04-18,Italian,produces,EAT,mangiare,36,0.86
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃, 吃饭",12,0.02
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃, 吃饭",13,0.07
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃, 吃饭",14,0.03
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃, 吃饭",15,0.11
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃, 吃饭",16,0.23
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",17,0.42
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",18,0.48
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",19,0.52
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",20,0.63
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",21,0.69
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",22,0.74
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",23,0.8
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",24,0.8
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",25,0.83
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",26,0.85
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",27,0.87
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",28,0.88
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",29,0.9
+2023-04-18,Mandarin (Beijing),produces,EAT,"吃饭, 后, 吃",30,0.93
+2023-04-18,Norwegian,produces,EAT,spise,8,0.03
+2023-04-18,Norwegian,produces,EAT,spise,9,0
+2023-04-18,Norwegian,produces,EAT,spise,10,0
+2023-04-18,Norwegian,produces,EAT,spise,11,0
+2023-04-18,Norwegian,produces,EAT,spise,12,0
+2023-04-18,Norwegian,produces,EAT,spise,13,0
+2023-04-18,Norwegian,produces,EAT,spise,14,0.01
+2023-04-18,Norwegian,produces,EAT,spise,15,0.03
+2023-04-18,Norwegian,produces,EAT,spise,16,0.05
+2023-04-18,Norwegian,produces,EAT,spise,17,0.12
+2023-04-18,Norwegian,produces,EAT,spise,18,0.19
+2023-04-18,Norwegian,produces,EAT,spise,19,0.27
+2023-04-18,Norwegian,produces,EAT,spise,20,0.37
+2023-04-18,Norwegian,produces,EAT,spise,21,0.46
+2023-04-18,Norwegian,produces,EAT,spise,22,0.55
+2023-04-18,Norwegian,produces,EAT,spise,23,0.66
+2023-04-18,Norwegian,produces,EAT,spise,24,0.72
+2023-04-18,Norwegian,produces,EAT,spise,25,0.76
+2023-04-18,Norwegian,produces,EAT,spise,26,0.82
+2023-04-18,Norwegian,produces,EAT,spise,27,0.86
+2023-04-18,Norwegian,produces,EAT,spise,28,0.87
+2023-04-18,Norwegian,produces,EAT,spise,29,0.91
+2023-04-18,Norwegian,produces,EAT,spise,30,0.91
+2023-04-18,Norwegian,produces,EAT,spise,31,0.94
+2023-04-18,Norwegian,produces,EAT,spise,32,0.94
+2023-04-18,Norwegian,produces,EAT,spise,33,0.97
+2023-04-18,Norwegian,produces,EAT,spise,34,0.95
+2023-04-18,Norwegian,produces,EAT,spise,35,0.97
+2023-04-18,Norwegian,produces,EAT,spise,36,0.97
+2023-04-18,Russian,produces,EAT,"есть, кушать",8,0
+2023-04-18,Russian,produces,EAT,"есть, кушать",9,0
+2023-04-18,Russian,produces,EAT,"есть, кушать",10,0
+2023-04-18,Russian,produces,EAT,"есть, кушать",11,0
+2023-04-18,Russian,produces,EAT,"есть, кушать",12,0.01
+2023-04-18,Russian,produces,EAT,"есть, кушать",13,0.03
+2023-04-18,Russian,produces,EAT,"есть, кушать",14,0.06
+2023-04-18,Russian,produces,EAT,"есть, кушать",15,0.07
+2023-04-18,Russian,produces,EAT,"есть, кушать",16,0.06
+2023-04-18,Russian,produces,EAT,"есть, кушать",17,0.12
+2023-04-18,Russian,produces,EAT,"есть, кушать",18,0.13
+2023-04-18,Russian,produces,EAT,"есть, кушать",19,0.22
+2023-04-18,Russian,produces,EAT,"есть, кушать",20,0.23
+2023-04-18,Russian,produces,EAT,"есть, кушать",21,0.36
+2023-04-18,Russian,produces,EAT,"есть, кушать",22,0.41
+2023-04-18,Russian,produces,EAT,"есть, кушать",23,0.49
+2023-04-18,Russian,produces,EAT,"есть, кушать",24,0.57
+2023-04-18,Russian,produces,EAT,"есть, кушать",25,0.61
+2023-04-18,Russian,produces,EAT,"есть, кушать",26,0.61
+2023-04-18,Russian,produces,EAT,"есть, кушать",27,0.65
+2023-04-18,Russian,produces,EAT,"есть, кушать",28,0.72
+2023-04-18,Russian,produces,EAT,"есть, кушать",29,0.83
+2023-04-18,Russian,produces,EAT,"есть, кушать",30,0.82
+2023-04-18,Russian,produces,EAT,"есть, кушать",31,0.88
+2023-04-18,Russian,produces,EAT,"есть, кушать",32,0.87
+2023-04-18,Russian,produces,EAT,"есть, кушать",33,0.91
+2023-04-18,Russian,produces,EAT,"есть, кушать",34,0.91
+2023-04-18,Russian,produces,EAT,"есть, кушать",35,0.96
+2023-04-18,Russian,produces,EAT,"есть, кушать",36,0.94
+2023-04-18,Slovak,produces,EAT,jesť,8,0.01
+2023-04-18,Slovak,produces,EAT,jesť,9,0.05
+2023-04-18,Slovak,produces,EAT,jesť,10,0.07
+2023-04-18,Slovak,produces,EAT,jesť,11,0.15
+2023-04-18,Slovak,produces,EAT,jesť,12,0.2
+2023-04-18,Slovak,produces,EAT,jesť,13,0.26
+2023-04-18,Slovak,produces,EAT,jesť,14,0.36
+2023-04-18,Slovak,produces,EAT,jesť,15,0.33
+2023-04-18,Slovak,produces,EAT,jesť,16,0.38
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,17,0.44
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,18,0.55
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,19,0.61
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,20,0.73
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,21,0.78
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,22,0.79
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,23,0.83
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,24,0.9
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,25,0.83
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,26,0.92
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,27,0.97
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,28,0.93
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,29,0.92
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,30,0.9
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,31,0.9
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,32,0.92
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,33,1
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,34,0.89
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,35,0.96
+2023-04-18,Slovak,produces,EAT,jesť / zjesť,36,1
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),8,0.03
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),9,0.02
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),10,0.03
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),11,0
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),12,0.1
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),13,0.05
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),14,0.04
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),15,0.15
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),16,0.22
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),17,0.23
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),18,0.28
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),19,0.45
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),20,0.42
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),21,0.5
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),22,0.52
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),23,0.51
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),24,0.66
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),25,0.67
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),26,0.67
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),27,0.85
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),28,0.78
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),29,0.79
+2023-04-18,Spanish (Mexican),produces,EAT,comer(se),30,0.77
+2023-04-18,Swedish,produces,EAT,äta,8,0
+2023-04-18,Swedish,produces,EAT,äta,9,0
+2023-04-18,Swedish,produces,EAT,äta,10,0
+2023-04-18,Swedish,produces,EAT,äta,11,0
+2023-04-18,Swedish,produces,EAT,äta,12,0.03
+2023-04-18,Swedish,produces,EAT,äta,13,0
+2023-04-18,Swedish,produces,EAT,äta,14,0.1
+2023-04-18,Swedish,produces,EAT,äta,15,0.08
+2023-04-18,Swedish,produces,EAT,äta,16,0.11
+2023-04-18,Swedish,produces,EAT,äta,19,0.26
+2023-04-18,Swedish,produces,EAT,äta,22,0.54
+2023-04-18,Swedish,produces,EAT,äta,25,0.75
+2023-04-18,Swedish,produces,EAT,äta,28,0.88
+2023-04-18,Turkish,produces,EAT,Ye,8,0.01
+2023-04-18,Turkish,produces,EAT,Ye,9,0
+2023-04-18,Turkish,produces,EAT,Ye,10,0.03
+2023-04-18,Turkish,produces,EAT,Ye,11,0.02
+2023-04-18,Turkish,produces,EAT,Ye,12,0.03
+2023-04-18,Turkish,produces,EAT,Ye,13,0.02
+2023-04-18,Turkish,produces,EAT,Ye,14,0.05
+2023-04-18,Turkish,produces,EAT,Ye,15,0.08
+2023-04-18,Turkish,produces,EAT,Ye,16,0.24
+2023-04-18,Turkish,produces,EAT,Ye,17,0.31
+2023-04-18,Turkish,produces,EAT,Ye,18,0.38
+2023-04-18,Turkish,produces,EAT,Ye,19,0.4
+2023-04-18,Turkish,produces,EAT,Ye,20,0.46
+2023-04-18,Turkish,produces,EAT,Ye,21,0.5
+2023-04-18,Turkish,produces,EAT,Ye,22,0.53
+2023-04-18,Turkish,produces,EAT,Ye,23,0.61
+2023-04-18,Turkish,produces,EAT,Ye,24,0.74
+2023-04-18,Turkish,produces,EAT,Ye,25,0.73
+2023-04-18,Turkish,produces,EAT,Ye,26,0.78
+2023-04-18,Turkish,produces,EAT,Ye,27,0.81
+2023-04-18,Turkish,produces,EAT,Ye,28,0.84
+2023-04-18,Turkish,produces,EAT,Ye,29,0.82
+2023-04-18,Turkish,produces,EAT,Ye,30,0.86
+2023-04-18,Turkish,produces,EAT,Ye,31,0.87
+2023-04-18,Turkish,produces,EAT,Ye,32,0.91
+2023-04-18,Turkish,produces,EAT,Ye,33,0.93
+2023-04-18,Turkish,produces,EAT,Ye,34,0.91
+2023-04-18,Turkish,produces,EAT,Ye,35,0.91
+2023-04-18,Turkish,produces,EAT,Ye,36,0.96
+2023-04-18,English (British),produces,EAT,eat,12,0.04
+2023-04-18,English (British),produces,EAT,eat,13,0
+2023-04-18,English (British),produces,EAT,eat,14,0.02
+2023-04-18,English (British),produces,EAT,eat,15,0.02
+2023-04-18,English (British),produces,EAT,eat,16,0.05
+2023-04-18,English (British),produces,EAT,eat,17,0.06
+2023-04-18,English (British),produces,EAT,eat,18,0.1
+2023-04-18,English (British),produces,EAT,eat,19,0.17
+2023-04-18,English (British),produces,EAT,eat,20,0.26
+2023-04-18,English (British),produces,EAT,eat,21,0.28
+2023-04-18,English (British),produces,EAT,eat,22,0.29
+2023-04-18,English (British),produces,EAT,eat,23,0.49
+2023-04-18,English (British),produces,EAT,eat,24,0.6
+2023-04-18,English (British),produces,EAT,eat,25,0.5
+2023-04-18,Kigiriama,produces,EAT,Arya,8,0.2
+2023-04-18,Kigiriama,produces,EAT,Arya,9,0
+2023-04-18,Kigiriama,produces,EAT,Arya,10,0
+2023-04-18,Kigiriama,produces,EAT,Arya,11,0
+2023-04-18,Kigiriama,produces,EAT,Arya,12,0
+2023-04-18,Kigiriama,produces,EAT,Arya,13,0
+2023-04-18,Kigiriama,produces,EAT,Arya,14,0
+2023-04-18,Kigiriama,produces,EAT,Arya,15,0
+2023-04-18,Kigiriama,produces,EAT,Arya,16,0
+2023-04-18,Kigiriama,produces,EAT,Arya,17,0.5
+2023-04-18,Kigiriama,produces,EAT,Arya,18,0.46
+2023-04-18,Kigiriama,produces,EAT,Arya,19,0.38
+2023-04-18,Kigiriama,produces,EAT,Arya,20,0.5
+2023-04-18,Kigiriama,produces,EAT,Arya,21,0.5
+2023-04-18,Kigiriama,produces,EAT,Arya,22,0.67
+2023-04-18,Kigiriama,produces,EAT,Arya,23,0.25
+2023-04-18,Kigiriama,produces,EAT,Arya,24,1
+2023-04-18,Kigiriama,produces,EAT,Arya,25,1
+2023-04-18,Kigiriama,produces,EAT,Arya,26,0.83
+2023-04-18,Kigiriama,produces,EAT,Arya,27,1
+2023-04-18,Kigiriama,produces,EAT,Arya,28,1
+2023-04-18,Kigiriama,produces,EAT,Arya,29,0.8
+2023-04-18,Kigiriama,produces,EAT,Arya,30,1
+2023-04-18,Czech,produces,EAT,"jíst, ham",16,0.31
+2023-04-18,Czech,produces,EAT,"jíst, ham",17,0.53
+2023-04-18,Czech,produces,EAT,"jíst, ham",18,0.51
+2023-04-18,Czech,produces,EAT,"jíst, ham",19,0.5
+2023-04-18,Czech,produces,EAT,"jíst, ham",20,0.69
+2023-04-18,Czech,produces,EAT,"jíst, ham",21,0.59
+2023-04-18,Czech,produces,EAT,"jíst, ham",22,0.6
+2023-04-18,Czech,produces,EAT,"jíst, ham",23,0.71
+2023-04-18,Czech,produces,EAT,"jíst, ham",24,0.61
+2023-04-18,Czech,produces,EAT,"jíst, ham",25,0.64
+2023-04-18,Czech,produces,EAT,"jíst, ham",26,0.75
+2023-04-18,Czech,produces,EAT,"jíst, ham",27,0.66
+2023-04-18,Czech,produces,EAT,"jíst, ham",28,0.77
+2023-04-18,Czech,produces,EAT,"jíst, ham",29,0.74
+2023-04-18,Czech,produces,EAT,"jíst, ham",30,0.8
+2023-04-18,English (Australian),produces,EAT,eat,12,0
+2023-04-18,English (Australian),produces,EAT,eat,13,0.02
+2023-04-18,English (Australian),produces,EAT,eat,14,0.05
+2023-04-18,English (Australian),produces,EAT,eat,15,0.07
+2023-04-18,English (Australian),produces,EAT,eat,16,0.05
+2023-04-18,English (Australian),produces,EAT,eat,17,0.09
+2023-04-18,English (Australian),produces,EAT,eat,18,0.14
+2023-04-18,English (Australian),produces,EAT,eat,19,0.24
+2023-04-18,English (Australian),produces,EAT,eat,20,0.32
+2023-04-18,English (Australian),produces,EAT,eat,21,0.37
+2023-04-18,English (Australian),produces,EAT,eat,22,0.53
+2023-04-18,English (Australian),produces,EAT,eat,23,0.59
+2023-04-18,English (Australian),produces,EAT,eat,24,0.57
+2023-04-18,English (Australian),produces,EAT,eat,25,0.72
+2023-04-18,English (Australian),produces,EAT,eat,26,0.7
+2023-04-18,English (Australian),produces,EAT,eat,27,0.85
+2023-04-18,English (Australian),produces,EAT,eat,28,0.82
+2023-04-18,English (Australian),produces,EAT,eat,29,0.88
+2023-04-18,English (Australian),produces,EAT,eat,30,0.91
+2023-04-18,Latvian,produces,EAT,ēst,8,0
+2023-04-18,Latvian,produces,EAT,ēst,9,0
+2023-04-18,Latvian,produces,EAT,ēst,10,0
+2023-04-18,Latvian,produces,EAT,ēst,11,0
+2023-04-18,Latvian,produces,EAT,ēst,12,0.12
+2023-04-18,Latvian,produces,EAT,ēst,13,0.05
+2023-04-18,Latvian,produces,EAT,ēst,14,0.28
+2023-04-18,Latvian,produces,EAT,ēst,15,0.24
+2023-04-18,Latvian,produces,EAT,ēst,16,0.19
+2023-04-18,Latvian,produces,EAT,ēst,17,0.3
+2023-04-18,Latvian,produces,EAT,ēst,18,0.48
+2023-04-18,Latvian,produces,EAT,ēst,19,0.32
+2023-04-18,Latvian,produces,EAT,ēst,20,0.47
+2023-04-18,Latvian,produces,EAT,ēst,21,0.62
+2023-04-18,Latvian,produces,EAT,ēst,22,0.72
+2023-04-18,Latvian,produces,EAT,ēst,23,0.68
+2023-04-18,Latvian,produces,EAT,ēst,24,0.87
+2023-04-18,Latvian,produces,EAT,ēst,25,0.72
+2023-04-18,Latvian,produces,EAT,ēst,26,0.86
+2023-04-18,Latvian,produces,EAT,ēst,27,0.72
+2023-04-18,Latvian,produces,EAT,ēst,28,0.87
+2023-04-18,Latvian,produces,EAT,ēst,29,0.75
+2023-04-18,Latvian,produces,EAT,ēst,30,0.88
+2023-04-18,Latvian,produces,EAT,ēst,31,0.89
+2023-04-18,Latvian,produces,EAT,ēst,32,0.96
+2023-04-18,Latvian,produces,EAT,ēst,33,0.9
+2023-04-18,Latvian,produces,EAT,ēst,34,0.82
+2023-04-18,Latvian,produces,EAT,ēst,35,0.9
+2023-04-18,Latvian,produces,EAT,ēst,36,0.82
+2023-04-18,Korean,produces,EAT,먹어,8,0
+2023-04-18,Korean,produces,EAT,먹어,9,0
+2023-04-18,Korean,produces,EAT,먹어,10,0.02
+2023-04-18,Korean,produces,EAT,먹어,11,0.06
+2023-04-18,Korean,produces,EAT,먹어,12,0.06
+2023-04-18,Korean,produces,EAT,먹어,13,0.11
+2023-04-18,Korean,produces,EAT,먹어,14,0.11
+2023-04-18,Korean,produces,EAT,먹어,15,0.13
+2023-04-18,Korean,produces,EAT,먹어,16,0.14
+2023-04-18,Korean,produces,EAT,먹어,17,0.27
+2023-04-18,Korean,produces,EAT,(음식을)먹어,18,0.32
+2023-04-18,Korean,produces,EAT,(음식을)먹어,19,0.22
+2023-04-18,Korean,produces,EAT,(음식을)먹어,20,0.33
+2023-04-18,Korean,produces,EAT,(음식을)먹어,21,0.35
+2023-04-18,Korean,produces,EAT,(음식을)먹어,22,0.46
+2023-04-18,Korean,produces,EAT,(음식을)먹어,23,0.56
+2023-04-18,Korean,produces,EAT,(음식을)먹어,24,0.62
+2023-04-18,Korean,produces,EAT,(음식을)먹어,25,0.77
+2023-04-18,Korean,produces,EAT,(음식을)먹어,26,0.7
+2023-04-18,Korean,produces,EAT,(음식을)먹어,27,0.72
+2023-04-18,Korean,produces,EAT,(음식을)먹어,28,0.82
+2023-04-18,Korean,produces,EAT,(음식을)먹어,29,0.82
+2023-04-18,Korean,produces,EAT,(음식을)먹어,30,0.77
+2023-04-18,Korean,produces,EAT,(음식을)먹어,31,0.88
+2023-04-18,Korean,produces,EAT,(음식을)먹어,32,0.82
+2023-04-18,Korean,produces,EAT,(음식을)먹어,33,0.92
+2023-04-18,Korean,produces,EAT,(음식을)먹어,34,0.95
+2023-04-18,Korean,produces,EAT,(음식을)먹어,35,0.87
+2023-04-18,Korean,produces,EAT,(음식을)먹어,36,0.99
+2023-04-18,French (French),produces,EAT,manger,8,0
+2023-04-18,French (French),produces,EAT,manger,9,0
+2023-04-18,French (French),produces,EAT,manger,11,0
+2023-04-18,French (French),produces,EAT,manger,12,0
+2023-04-18,French (French),produces,EAT,manger,13,0.02
+2023-04-18,French (French),produces,EAT,manger,14,0
+2023-04-18,French (French),produces,EAT,manger,15,0
+2023-04-18,French (French),produces,EAT,manger,16,0.07
+2023-04-18,French (French),produces,EAT,manger,17,0.12
+2023-04-18,French (French),produces,EAT,manger,18,0
+2023-04-18,French (French),produces,EAT,manger,19,0.45
+2023-04-18,French (French),produces,EAT,manger,20,0.22
+2023-04-18,French (French),produces,EAT,manger,21,0.39
+2023-04-18,French (French),produces,EAT,manger,22,0.44
+2023-04-18,French (French),produces,EAT,manger,23,0.38
+2023-04-18,French (French),produces,EAT,manger,24,0.61
+2023-04-18,French (French),produces,EAT,manger,25,0.74
+2023-04-18,French (French),produces,EAT,manger,26,0.72
+2023-04-18,French (French),produces,EAT,manger,27,0.65
+2023-04-18,French (French),produces,EAT,manger,28,0.88
+2023-04-18,French (French),produces,EAT,manger,29,0.94
+2023-04-18,French (French),produces,EAT,manger,30,0.83
+2023-04-18,Spanish (European),produces,EAT,comer(se),8,0
+2023-04-18,Spanish (European),produces,EAT,comer(se),9,0
+2023-04-18,Spanish (European),produces,EAT,comer(se),10,0
+2023-04-18,Spanish (European),produces,EAT,comer(se),11,0
+2023-04-18,Spanish (European),produces,EAT,comer(se),12,0
+2023-04-18,Spanish (European),produces,EAT,comer(se),13,0
+2023-04-18,Spanish (European),produces,EAT,comer(se),14,0.04
+2023-04-18,Spanish (European),produces,EAT,comer(se),15,0.05
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",16,0.14
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",17,0.17
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",18,0.27
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",19,0.41
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",20,0.47
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",21,0.5
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",22,0.59
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",23,0.78
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",24,0.7
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",25,0.73
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",26,0.89
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",27,0.91
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",28,0.96
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",29,0.95
+2023-04-18,Spanish (European),produces,EAT,"a comer, comer(se)",30,0.91
+2023-04-18,Portuguese (European),produces,EAT,Comer,8,0
+2023-04-18,Portuguese (European),produces,EAT,Comer,9,0
+2023-04-18,Portuguese (European),produces,EAT,Comer,10,0.01
+2023-04-18,Portuguese (European),produces,EAT,Comer,11,0
+2023-04-18,Portuguese (European),produces,EAT,Comer,12,0.01
+2023-04-18,Portuguese (European),produces,EAT,Comer,13,0.01
+2023-04-18,Portuguese (European),produces,EAT,Comer,14,0.04
+2023-04-18,Portuguese (European),produces,EAT,Comer,15,0.04
+2023-04-18,Portuguese (European),produces,EAT,Comer,16,0.06
+2023-04-18,Portuguese (European),produces,EAT,Comer,17,0.1
+2023-04-18,Portuguese (European),produces,EAT,Comer,18,0.1
+2023-04-18,Portuguese (European),produces,EAT,Comer,19,0.13
+2023-04-18,Portuguese (European),produces,EAT,Comer,20,0.24
+2023-04-18,Portuguese (European),produces,EAT,Comer,21,0.26
+2023-04-18,Portuguese (European),produces,EAT,Comer,22,0.4
+2023-04-18,Portuguese (European),produces,EAT,Comer,23,0.43
+2023-04-18,Portuguese (European),produces,EAT,Comer,24,0.53
+2023-04-18,Portuguese (European),produces,EAT,Comer,25,0.67
+2023-04-18,Portuguese (European),produces,EAT,Comer,26,0.71
+2023-04-18,Portuguese (European),produces,EAT,Comer,27,0.77
+2023-04-18,Portuguese (European),produces,EAT,Comer,28,0.79
+2023-04-18,Portuguese (European),produces,EAT,Comer,29,0.79
+2023-04-18,Portuguese (European),produces,EAT,Comer,30,0.81
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",8,0.01
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",9,0.06
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",10,0.07
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",11,0.11
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",12,0.14
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",13,0.22
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",14,0.33
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",15,0.35
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",16,0.35
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",17,0.36
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",18,0.42
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",19,0.55
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",20,0.6
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",21,0.66
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",22,0.71
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",23,0.81
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",24,0.84
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",25,0.91
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",26,0.91
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",27,0.89
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",28,0.96
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",29,0.97
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",30,0.96
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",31,0.98
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",32,0.95
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",33,0.98
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",34,0.95
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",35,0.99
+2023-04-18,Mandarin (Taiwanese),produces,EAT,"吃飯, 吃",36,1
+2023-04-18,Dutch,produces,EAT,"eten(ww), eten(routine)",8,0
+2023-04-18,Dutch,produces,EAT,"eten(ww), eten(routine)",9,0.01
+2023-04-18,Dutch,produces,EAT,"eten(ww), eten(routine)",10,0.01
+2023-04-18,Dutch,produces,EAT,"eten(ww), eten(routine)",11,0.01
+2023-04-18,Dutch,produces,EAT,"eten(ww), eten(routine)",12,0.17
+2023-04-18,Dutch,produces,EAT,"eten(ww), eten(routine)",13,0.04
+2023-04-18,Dutch,produces,EAT,"eten(ww), eten(routine)",14,0.09
+2023-04-18,Dutch,produces,EAT,"eten, eten(ww), eten(routine)",15,0.18
+2023-04-18,Dutch,produces,EAT,"eten, eten(ww), eten(routine)",16,0.16
+2023-04-18,Dutch,produces,EAT,"eten, eten(ww)",17,0.42
+2023-04-18,Dutch,produces,EAT,"eten, eten(ww)",18,0.3
+2023-04-18,Dutch,produces,EAT,"eten, eten(ww)",19,0.34
+2023-04-18,Dutch,produces,EAT,"eten, eten(ww)",20,0.45
+2023-04-18,Dutch,produces,EAT,"eten, eten(ww)",21,0.54
+2023-04-18,Dutch,produces,EAT,eten(ww),22,0.71
+2023-04-18,Dutch,produces,EAT,eten(ww),23,0.78
+2023-04-18,Dutch,produces,EAT,eten(ww),24,0.9
+2023-04-18,Dutch,produces,EAT,eten(ww),25,1
+2023-04-18,Dutch,produces,EAT,eten(ww),26,1
+2023-04-18,Dutch,produces,EAT,eten(ww),27,1
+2023-04-18,Dutch,produces,EAT,eten(ww),28,1
+2023-04-18,Dutch,produces,EAT,eten(ww),29,1
+2023-04-18,Dutch,produces,EAT,eten(ww),30,1
+2023-04-18,Dutch,produces,EAT,eten(ww),31,1
+2023-04-18,Hungarian,produces,EAT,eszik,16,0.1
+2023-04-18,Hungarian,produces,EAT,eszik,17,0.22
+2023-04-18,Hungarian,produces,EAT,eszik,18,0.28
+2023-04-18,Hungarian,produces,EAT,eszik,19,0.38
+2023-04-18,Hungarian,produces,EAT,eszik,20,0.28
+2023-04-18,Hungarian,produces,EAT,eszik,21,0.56
+2023-04-18,Hungarian,produces,EAT,eszik,22,0.48
+2023-04-18,Hungarian,produces,EAT,eszik,23,0.67
+2023-04-18,Hungarian,produces,EAT,eszik,24,0.53
+2023-04-18,Hungarian,produces,EAT,eszik,25,0.84
+2023-04-18,Hungarian,produces,EAT,eszik,26,0.78
+2023-04-18,Hungarian,produces,EAT,eszik,27,0.77
+2023-04-18,Hungarian,produces,EAT,eszik,28,0.8
+2023-04-18,Hungarian,produces,EAT,eszik,29,0.67
+2023-04-18,Hungarian,produces,EAT,eszik,30,0.78
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,16,0.23
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,17,0.08
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,18,0.19
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,19,0.27
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,20,0.3
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,21,0.56
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,22,0.46
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,23,0.57
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,24,0.61
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,25,0.67
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,26,0.71
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,27,0.75
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,28,0.62
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,29,0.78
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,30,0.81
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,31,1
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,32,1
+2023-04-18,Spanish (Argentinian),produces,EAT,comer_se,33,0.5
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",8,0
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",9,0.05
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",10,0.06
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",11,0.08
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",12,0
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",13,0.07
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",14,0.17
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",15,0.08
+2023-04-18,Persian,produces,EAT,"خوردن, خوردن (اصابت کردن)",16,0.25
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",17,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",18,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",20,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",21,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",22,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",23,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",24,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",25,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",26,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",27,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",28,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",29,0
+2023-04-18,Persian,produces,EAT,"بخور, بخورم, خورد, خوردم",30,0

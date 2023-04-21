@@ -1,0 +1,853 @@
+---
+title: '<img src="images/walrus.png" class="logo"><br>Tutorial on Wordbank  and wordbankr package'
+author: 'Jun Ho Chai<br><br><img src="images/chosunbabylab.png" class="llogo"><img src="images/chosun.jpg" class="rlogo">'
+output: 
+  ioslides_presentation: 
+    css: styles.css
+    highlight: tango
+    incremental: no
+    smaller: no
+    df_print: paged
+    widescreen: true
+    slide_width: 16
+    slide_height: 9
+    transition: 0
+    out.width: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+library(glue)
+library(tidyverse)
+library(ggthemes)
+
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE, warning = FALSE,
+                      message = FALSE, rows.print = 20)
+options(DT.options = list(searching = FALSE, lengthChange = FALSE))
+
+.font <- "Open Sans"
+# theme_set(langcog::theme_mikabr(base_family = .font))
+theme_update(plot.margin = margin(0, 0, 2, 0, "pt"),
+             legend.margin = margin(0, 0, 0, 0, "pt"))
+
+source("reveal.R")
+
+```
+
+## {.flexbox .vcenter}
+
+1. Introduction to CDI & Stanford Wordbank
+2. How to Use the Stanford Wordbank Website  
+3. In-Depth Analysis with wordbankr
+
+
+## The MacArthur-Bates Communicative Development Inventories (MB-CDIs)
+are ***parent report*** instruments which capture information about children's developing abilities in early language:<br>vocabulary comprehension, production, gestures, and grammar.<br>
+<br>
+<div class="centered">
+<img src="images/mcdi_eng.jpg" style="width: 30%;">
+</div>
+
+## Korean MB-CDI {.flexbox .vcenter}
+<div class="centered">
+<img src="images/MCDI_WG1.png" style="width: 23%;">
+<img src="images/MCDI_WG2.png" style="width: 23%;">
+<img src="images/MCDI_WS1.png" style="width: 23%;">
+<img src="images/MCDI_WS2.png" style="width: 23%;">
+</div>
+
+## Korean MB-CDI {.smaller}
+```{r demo, echo = F, include = F}
+library(wordbankr)
+items_kor_ws <- get_item_data(language = "Korean", form = "WS")
+summary <- items_kor_ws %>% group_by(category) %>% count()
+
+```
+
+```{r kor_items}
+items_kor_ws
+```
+
+## Korean MB-CDI {.smaller}
+```{r kor_items_sum}
+summary
+```
+
+## Wordbank {.flexbox .vcenter}
+<div class="centered">
+<img src="images/wbhome.png" style="width: 70%;">
+http://wordbank.stanford.edu/
+</div>
+
+## Wordbank {.flexbox .vcenter}
+<div class="centered">
+http://wordbank.stanford.edu/data
+<img src="images/datapage.png" style="width: 70%;">
+</div>
+
+## Wordbank 
+
+__Vocabulary Norms__
+
+- show the size of child's language across age
+- show typical language development
+
+__Item Trajectories__
+
+- track the use of specific words or phrases over time
+- show how a child's language skills are developing
+- identifying potential areas of difficulty
+
+
+## Wordbank 
+
+**__Vocabulary Norms__**
+
+- **show the size of child's language across age**
+- **show typical language development**
+
+__Item Trajectories__
+
+- track the use of specific words or phrases over time
+- show how a child's language skills are developing
+- identifying potential areas of difficulty
+
+## Vocabulary Norms {.flexbox .vcenter}
+<div class="centered">
+[web snapshot](http://52.26.82.213/vocab_norms/?_inputs_&doc=%22title%22&measure=%22production%22&go=0&details=null&form=%22WS%22&demo=%22sex%22&language=%22Korean%22&data_filter=%5B%22first_administration%22%2C%22is_norming%22%2C%22monolingual%22%2C%22typically_developing%22%5D&quantiles=%22Standard%22)<br>
+<img src="images/norm1.png" style="width: 71%;">
+</div>
+
+## Vocabulary Norms {.flexbox .vcenter}
+<div class="centered">
+[web snapshot](http://52.26.82.213/vocab_norms/?_inputs_&doc=%22title%22&measure=%22production%22&go=1&details=null&form=%22WS%22&demo=%22sex%22&language=%22Korean%22&data_filter=%5B%22first_administration%22%2C%22is_norming%22%2C%22monolingual%22%2C%22typically_developing%22%5D&quantiles=%22Standard%22&waiter_shown=true&plot_waiter_hidden=true)<br>
+<img src="images/norm2.png" style="width: 71%;">
+</div>
+
+## Vocabulary Norms {.smaller}
+```{r}
+read_csv("files/wordbank_vocab_data.csv")
+```
+
+## Wordbank 
+
+**__Vocabulary Norms__**
+
+- **show the size of child's language across age**
+- **show typical language development**
+
+__Item Trajectories__
+
+- track the use of specific words or phrases over time
+- show how a child's language skills are developing
+- identifying potential areas of difficulty
+
+## Wordbank 
+
+__Vocabulary Norms__
+
+- show the size of child's language across age.
+- show typical language development
+
+**__Item Trajectories__**
+
+- **track the use of specific words or phrases over time**
+- **show how a child's language skills are developing**
+- **identifying potential areas of difficulty**
+
+## Item Trajectories {.flexbox .vcenter}
+<div class="centered">
+[web snapshot](http://52.26.82.213/item_trajectories/?_inputs_&collapse0905285=null&collapse0018040=null&collapse0592625=null&collapse0951290=null&collapse0038508=null&collapse0821789=null&collapse0648780=null&collapse0784506=null&collapse0964903=null&language=%22Korean%22&collapse0455191=null&collapse0455113=null&collapse0387383=null&collapse0953393=null&collapse0158102=null&form=%22WG%22&collapse0198748=null&collapse0326125=null&collapse0270180=null&doc=%22title%22&collapse0997878=null&collapse0231479=null&collapse0529761=null&collapse0837595=null&smoother=%22logistic%22&collapse0667121=null&words=%5B%22%EB%A7%98%EB%A7%88%22%2C%22%EC%97%84%EB%A7%88%22%2C%22%EB%8F%84%EB%A6%AC%EB%8F%84%EB%A6%AC%22%2C%22%EA%B3%B5%22%5D&measure=%22produces%22&collapse0693231=null&collapse0308209=null&collapse0050828=null&data_filter=%5B%22first_administration%22%2C%22monolingual%22%2C%22typically_developing%22%5D)<br>
+<img src="images/item1.png" style="width: 70%;">
+</div>
+
+## Item Trajectories {.flexbox .vcenter}
+<div class="centered">
+<br>
+<img src="images/item2.png" style="width: 70%;"><br>
+</div>
+
+## Item Trajectories {.flexbox .vcenter}
+<div class="centered">
+[web snapshot](http://52.26.82.213/item_trajectories/?_inputs_&collapse0905285=null&collapse0018040=null&collapse0592625=null&collapse0888474=null&collapse0951290=null&collapse0269497=null&collapse0038508=null&collapse0821789=null&collapse0019938=null&collapse0938624=null&collapse0966799=null&collapse0648780=null&collapse0784506=null&collapse0964903=null&language=%22Korean%22&collapse0305718=null&collapse0455191=null&collapse0973825=null&collapse0243669=null&collapse0455113=null&collapse0387383=null&collapse0953393=null&collapse0158102=null&form=%5B%22WG%22%2C%22WS%22%5D&collapse0169291=null&collapse0198748=null&collapse0777522=null&collapse0326125=null&collapse0270180=null&doc=%22title%22&collapse0547466=null&collapse0997878=null&collapse0231479=null&collapse0529761=null&collapse0837595=null&smoother=%22logistic%22&collapse0685048=null&collapse0562855=null&collapse0667121=null&collapse0243552=null&collapse0814187=null&words=%5B%22%EC%97%84%EB%A7%88%22%2C%22%EA%B3%B5%22%2C%22%EB%96%A1%22%2C%22%EC%8B%AB%EC%96%B4%22%5D&collapse0966355=null&collapse0063791=null&collapse0295216=null&measure=%22produces%22&collapse0693231=null&collapse0960409=null&collapse0308209=null&collapse0050828=null&collapse0113952=null&data_filter=%5B%22first_administration%22%2C%22monolingual%22%2C%22typically_developing%22%5D)<br>
+<img src="images/item3.png" style="width: 70%;">
+</div>
+
+## Item Trajectories {.smaller}
+```{r}
+read_csv("files/wordbank_item_trajectories.csv")
+```
+
+
+## Wordbank 
+__Cross-Linguistic Trajectories__
+
+- similar to item trajectories but, 
+- allows cross-linguistic comparisons
+
+__Semantic Networks__
+
+- show relationships between different words
+- show how a child's vocabulary is organized
+
+__Data Export Tools__
+
+- export data from the Wordbank website 
+- for conducting in-depth analyses using software such as R or SPSS
+
+## Wordbank 
+**__Cross-Linguistic Trajectories__**
+
+- **similar to item trajectories but, **
+- **allows cross-linguistic comparisons**
+
+__Semantic Networks__
+
+- show relationships between different words
+- show how a child's vocabulary is organized
+
+__Data Export Tools__
+
+- export data from the Wordbank website 
+- for conducting in-depth analyses using software such as R or SPSS
+
+## Cross-Linguistic Trajectories: mommy {.flexbox .vcenter}
+<div class="centered">
+[web snapshot](http://52.26.82.213/uni_lemmas/?_inputs_&uni_lemma=%22mommy%22&languages=%5B%22Cantonese%22%2C%22Croatian%22%2C%22Danish%22%2C%22English%20(American)%22%2C%22French%20(Quebecois)%22%2C%22German%22%2C%22Italian%22%2C%22Mandarin%20(Beijing)%22%2C%22Norwegian%22%2C%22Russian%22%2C%22Slovak%22%2C%22Spanish%20(Mexican)%22%2C%22Swedish%22%2C%22Turkish%22%2C%22English%20(British)%22%2C%22Kigiriama%22%2C%22Czech%22%2C%22English%20(Australian)%22%2C%22Latvian%22%2C%22Korean%22%2C%22French%20(French)%22%2C%22Spanish%20(European)%22%2C%22Portuguese%20(European)%22%2C%22Mandarin%20(Taiwanese)%22%2C%22Dutch%22%2C%22Hungarian%22%2C%22Spanish%20(Argentinian)%22%2C%22Persian%22%5D&doc=%22title%22&measure=%22produces%22)<br>
+<img src="images/cling1.png" style="width: 65%;">
+</div>
+
+## Cross-Linguistic Trajectories: mommy {.smaller}
+```{r}
+read_csv("files/wordbank_crosslinguistic_mommy.csv") %>% arrange(age)
+```
+
+## Cross-Linguistic Trajectories: food {.flexbox .vcenter}
+<div class="centered">
+[web snapshot](http://52.26.82.213/uni_lemmas/?_inputs_&uni_lemma=%22food%22&languages=%5B%22Cantonese%22%2C%22Croatian%22%2C%22Danish%22%2C%22English%20(American)%22%2C%22French%20(Quebecois)%22%2C%22German%22%2C%22Hebrew%22%2C%22Mandarin%20(Beijing)%22%2C%22Norwegian%22%2C%22Russian%22%2C%22Slovak%22%2C%22Spanish%20(Mexican)%22%2C%22Swedish%22%2C%22Turkish%22%2C%22English%20(British)%22%2C%22Kigiriama%22%2C%22Czech%22%2C%22English%20(Australian)%22%2C%22Korean%22%2C%22French%20(French)%22%2C%22Spanish%20(European)%22%2C%22Portuguese%20(European)%22%2C%22Mandarin%20(Taiwanese)%22%2C%22Dutch%22%2C%22Hungarian%22%2C%22Persian%22%5D&doc=%22title%22&measure=%22produces%22)<br>
+<img src="images/cling2.png" style="width: 65%;">
+</div>
+
+## Cross-Linguistic Trajectories: food {.smaller}
+```{r}
+read_csv("files/wordbank_crosslinguistic_food.csv") %>% arrange(age)
+```
+
+## Cross-Linguistic Trajectories: eat {.flexbox .vcenter}
+<div class="centered">
+[web snapshot](http://52.26.82.213/uni_lemmas/?_inputs_&uni_lemma=%22eat%22&languages=%5B%22Cantonese%22%2C%22Croatian%22%2C%22Danish%22%2C%22English%20(American)%22%2C%22French%20(Quebecois)%22%2C%22German%22%2C%22Hebrew%22%2C%22Italian%22%2C%22Mandarin%20(Beijing)%22%2C%22Norwegian%22%2C%22Russian%22%2C%22Slovak%22%2C%22Spanish%20(Mexican)%22%2C%22Swedish%22%2C%22Turkish%22%2C%22English%20(British)%22%2C%22Kigiriama%22%2C%22Czech%22%2C%22English%20(Australian)%22%2C%22Latvian%22%2C%22Korean%22%2C%22French%20(French)%22%2C%22Spanish%20(European)%22%2C%22Portuguese%20(European)%22%2C%22Mandarin%20(Taiwanese)%22%2C%22Dutch%22%2C%22Hungarian%22%2C%22Spanish%20(Argentinian)%22%2C%22Persian%22%5D&doc=%22title%22&measure=%22produces%22)<br>
+<img src="images/cling3.png" style="width: 65%;">
+</div>
+
+## Cross-Linguistic Trajectories: eat {.smaller}
+```{r}
+read_csv("files/wordbank_crosslinguistic_eat.csv") %>% arrange(age)
+```
+
+## Wordbank 
+**__Cross-Linguistic Trajectories__**
+
+- **similar to item trajectories but, **
+- **allows cross-linguistic comparisons**
+
+__Semantic Networks__
+
+- show relationships between different words
+- show how a child's vocabulary is organized
+
+__Data Export Tools__
+
+- export data from the Wordbank website 
+- for conducting in-depth analyses using software such as R or SPSS
+
+## Wordbank 
+__Cross-Linguistic Trajectories__
+
+- similar to item trajectories but, 
+- allows cross-linguistic comparisons
+
+**__Semantic Networks__**
+
+- **show relationships between different words**
+- **show how a child's vocabulary is organized**
+
+__Data Export Tools__
+
+- export data from the Wordbank website 
+- for conducting in-depth analyses using software such as R or SPSS
+
+## Semantic Networks {.flexbox .vcenter}
+<div class="centered">
+<img src="images/snet1.png" style="width: 86%;"><br>
+[Snapshot at 6 - 13 mo](http://52.26.82.213/networks/?_inputs_&group=%22category%22&source=%22W2V%22&doc=%22title%22&measure=%22production%22&weighted=%22TRUE%22&age=13&instrument=%22WS%22&cutoff=0.4)
+</div>
+
+## Semantic Networks {.flexbox .vcenter}
+<div class="centered">
+<img src="images/snet2.png" style="width: 86%;"><br>
+[Snapshot at 6 - 17 mo](http://52.26.82.213/networks/?_inputs_&group=%22category%22&source=%22W2V%22&doc=%22title%22&measure=%22production%22&weighted=%22TRUE%22&age=17&instrument=%22WS%22&cutoff=0.4)
+</div>
+
+## Semantic Networks {.flexbox .vcenter}
+<div class="centered">
+<img src="images/snetpaper.png" style="width: 60%;"><br>
+[Fourtassi, Bian, and Frank, 2020](https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12847)
+</div>
+
+## Wordbank 
+__Cross-Linguistic Trajectories__
+
+- similar to item trajectories but, 
+- allows cross-linguistic comparisons
+
+**__Semantic Networks__**
+
+- **show relationships between different words**
+- **show how a child's vocabulary is organized**
+
+__Data Export Tools__
+
+- export data from the Wordbank website 
+- for conducting in-depth analyses using software such as R or SPSS
+
+## Wordbank 
+__Cross-Linguistic Trajectories__
+
+- similar to item trajectories but, 
+- allows cross-linguistic comparisons
+
+__Semantic Networks__
+
+- show relationships between different words
+- show how a child's vocabulary is organized
+
+**__Data Export Tools__**
+
+- **export data from the Wordbank website**
+- **for conducting in-depth analyses using software such as R or SPSS**
+
+## Data Export Tools  {.flexbox .vcenter}
+<div class="centered">
+[By-Child](http://wordbank.stanford.edu/data?name=admin_data)<br><br>
+<img src="images/expo1.png" style="width: 75%;">
+</div>
+
+## Data Export Tools{.flexbox .vcenter}
+[By-Word](http://wordbank.stanford.edu/data?name=item_data)<br><br>
+<div class="centered">
+<img src="images/expo2.png" style="width: 75%;">
+</div>
+
+## Data Export Tools {.flexbox .vcenter}
+[Full Child-by-Word](http://wordbank.stanford.edu/data?name=instrument_data)<br><br>
+<div class="centered">
+<img src="images/expo3.png" style="width: 75%;">
+</div>
+
+## By-Word Summary Data {.smaller}
+```{r}
+read_csv("files/wordbank_item_data.csv")
+```
+
+## By-Word Summary Data {.smaller}
+```{r}
+set.seed(1234)
+item <- sample(641, 3)
+read_csv("files/wordbank_item_data.csv") %>% 
+  filter(item_id %in% item) 
+```
+
+## By-Word Summary Data {.smaller}
+```{r}
+read_csv("files/wordbank_item_data.csv") %>% 
+  filter(item_id %in% item) %>% 
+  pivot_longer(cols = c(paste(18:36)), names_to = "age", values_to = "proportion") 
+```
+
+## By-Word Summary Data {.smaller}
+```{r, fig.align='center'}
+read_csv("files/wordbank_item_data.csv") %>% 
+  filter(item_id %in% item) %>% 
+  pivot_longer(cols = c(paste(18:36)), names_to = "age", values_to = "proportion") %>%
+  ggplot(aes(y = proportion, x = age, col = item_definition)) + geom_point() + 
+  theme_classic(base_family = "NanumGothic") + geom_hline(yintercept = .5, col = "grey40", linetype = "dashed") 
+```
+
+## wordbankr {.flexbox .vcenter}
+[langcog/wordbankr](https://github.com/langcog/wordbankr)
+<div class="centered">
+<img src="images/wordbankr.png" style="width: 70%;"><br><br>
+</div>
+\> install.packages("wordbankr") or <br><br>
+\> devtools::install_github("langcog/wordbankr")
+
+## wordbankr {.build}
+```{r wb_a}
+library(wordbankr)
+```
+```{r wb_b}
+help(package = "wordbankr")
+```
+```{r wb_c}
+ls("package:wordbankr")
+```
+
+## wordbankr: instruments {.smaller}
+```{r wb_inst}
+get_instruments()
+```
+
+## wordbankr: sources {.smaller}
+```{r wb_src_a}
+get_sources()
+```
+
+## wordbankr: sources {.smaller}
+```{r wb_src_b}
+get_sources(language = "Korean")
+```
+
+## wordbankr: get_administration_data() {.smaller}
+```{r wb_admin_a, rows.print=15}
+admins_kor_ws <- get_administration_data(language = "Korean", form = "WS")
+admins_kor_ws
+```
+```{r wb_admin_b}
+n_distinct(admins_kor_ws$data_id)
+```
+
+## wordbankr: summary {.smaller}
+```{r wb_admin_c}
+admins_kor_ws %>% group_by(sex) %>% count(age) %>% spread(sex, n)
+```
+
+## wordbankr: get_instrument_data() {.smaller}
+```{r, rows.print=15}
+inst_kor_ws <- get_instrument_data(language = "Korean", form = "WS")
+inst_kor_ws
+```
+
+## wordbankr: get_instrument_data() + get_administration_data() {.smaller}
+```{r, rows.print=15}
+inst_kor_ws %>% 
+  inner_join(admins_kor_ws %>% select(data_id, age, sex))
+```
+
+## wordbankr: production {.smaller}
+```{r, rows.print=15}
+inst_kor_ws %>% 
+  inner_join(admins_kor_ws %>% select(data_id, age, sex)) 
+
+```
+
+## wordbankr: production {.smaller}
+```{r, rows.print=15}
+inst_kor_ws %>% 
+  inner_join(admins_kor_ws %>% select(data_id, age, sex)) %>% 
+  filter(value == "produces" & !is.na(sex))
+
+```
+
+## wordbankr: production {.smaller}
+```{r, rows.print=15}
+inst_kor_ws %>% 
+  inner_join(admins_kor_ws %>% select(data_id, age, sex)) %>% 
+  filter(value == "produces" & !is.na(sex)) %>% 
+  group_by(data_id, age, sex)
+```
+
+## wordbankr: production {.smaller}
+```{r, rows.print=15}
+inst_kor_ws %>% 
+  inner_join(admins_kor_ws %>% select(data_id, age, sex)) %>% 
+  filter(value == "produces" & !is.na(sex)) %>% 
+  group_by(data_id, age, sex) %>% 
+  count() %>% rename(production = n) -> data_kor_ws
+data_kor_ws
+```
+
+## wordbankr: production growth snapshot {.smaller}
+```{r, fig.align = 'center'}
+ggplot(data_kor_ws, aes(x = age, y = production, col = sex)) +
+  labs(x = "Age (months)", y = "Productive vocabulary size") + theme_classic() 
+```
+
+
+## wordbankr: production growth snapshot {.smaller}
+```{r wb_fullins_c, fig.align = 'center'}
+ggplot(data_kor_ws, aes(x = age, y = production, col = sex)) +
+  labs(x = "Age (months)", y = "Productive vocabulary size") + theme_classic() +
+  geom_jitter(size = 0.5) 
+```
+
+## wordbankr: production growth snapshot {.smaller}
+```{r, fig.align = 'center'}
+ggplot(data_kor_ws, aes(x = age, y = production, col = sex)) +
+  labs(x = "Age (months)", y = "Productive vocabulary size") + theme_classic() +
+  geom_jitter(colour = "grey", size = 0.5) +
+  geom_smooth(method = "lm", formula = y ~ splines::ns(x, df = 2)) 
+```
+
+## wordbankr: fit_vocab_quantiles() {.smaller}
+```{r} 
+data_quantiles <- fit_vocab_quantiles(
+  vocab_data = data_kor_ws %>% mutate(language = "Korean", form = "WS"),
+  measure = production, 
+  group = sex, 
+  quantiles = "standard")
+
+data_quantiles
+```
+
+## wordbankr: fit_vocab_quantiles() {.smaller}
+```{r, fig.align = 'center'}
+ggplot(data_kor_ws, aes(x = age, y = production)) +
+  labs(x = "Age (months)", y = "Productive vocabulary size")+theme_classic() + facet_wrap(~sex)
+```
+
+## wordbankr: fit_vocab_quantiles() {.smaller}
+```{r, fig.align = 'center'}
+ggplot(data_kor_ws, aes(x = age, y = production, col = sex)) +
+  labs(x = "Age (months)", y = "Productive vocabulary size")+theme_classic() + facet_wrap(~sex) +
+  geom_jitter(size = 0.5) 
+```
+
+## wordbankr: fit_vocab_quantiles() {.smaller}
+```{r, fig.align = 'center'}
+ggplot(data_kor_ws, aes(x = age, y = production)) +
+  labs(x = "Age (months)", y = "Productive vocabulary size")+theme_classic() + facet_wrap(~sex) +
+  geom_jitter(colour = "grey", size = 0.5) +
+  geom_line(data = data_quantiles, aes(y = production, x = age, col = quantile), inherit.aes = F, size = 1) 
+```
+
+## wordbankr: fit_aoa() {.smaller}
+```{r, rows.print=18}
+fit_aoa(
+  inst_kor_ws %>% inner_join(admins_kor_ws %>% select(data_id, age, sex)),
+  measure = "produces",
+  method = "glmrob",
+  proportion = 0.5
+) -> aoa_list
+
+aoa_list
+```
+
+## wordbankr: fit_aoa() {.smaller}
+```{r, rows.print=7}
+aoa_list %>% filter(!is.na(aoa)) -> aoa_list
+aoa_list
+```
+
+```{r, rows.print=7}
+items_kor_ws # from get_item_data()
+```
+
+## wordbankr: fit_aoa() {.smaller}
+```{r}
+aoa_list %>% 
+  inner_join(items_kor_ws %>% select(num_item_id, definition, uni_lemma)) -> aoa_list
+aoa_list %>% arrange(aoa)
+```
+
+## Some ideas
+
+Use data from Wordbank to explore questions about language learning. \
+
+- Investigate the relationship between vocabulary size and other reported items, e.g.,
+  - grammar proficiency ("complexity" items), age, gender, and socio-economic status
+- Explore the relationship between lexical categories and proportion of words that children knew 
+  - to what extent some type of words are more easily acquired than the other word types
+  
+## Some ideas
+
+Use data from Wordbank to explore questions about language learning. \
+
+- Investigate the relationship between vocabulary size and other reported items, e.g.,
+  - grammar proficiency ("complexity" items), age, gender, and socio-economic status
+- Explore the relationship between lexical categories and proportion of words that children knew 
+  - **to what extent some type of words are more easily acquired than the other word types**
+  
+## Examples 1: lexical class {.smaller}
+```{r}
+items_kor_ws # from get_item_data()
+```
+
+## Examples 1: lexical class {.smaller}
+```{r}
+summarise_items(items_kor_ws) ->
+  item_summary
+item_summary
+```
+
+## Examples 1: lexical class {.smaller}
+```{r}
+unique(item_summary$lexical_category)
+```
+
+```{r}
+unique(item_summary$lexical_class)
+```
+
+## Examples 1: lexical class {.smaller}
+```{r, fig.align='center'}
+ggplot(item_summary %>% filter(!is.na(lexical_class)), aes(y = production, x = age)) + theme_classic()
+```  
+
+## Examples 1: lexical class {.smaller}
+```{r, fig.align = 'center'}
+ggplot(item_summary %>% filter(!is.na(lexical_class)), aes(y = production, x = age)) + theme_classic() +
+  geom_jitter(size = .5, col = "grey", alpha = .5) 
+
+```  
+
+
+## Examples 1: lexical class {.smaller}
+```{r, fig.align = 'center'}
+ggplot(item_summary %>% filter(!is.na(lexical_class)), aes(y = production, x = age, col = lexical_class)) + theme_classic() +
+  geom_jitter(size = .5)
+```  
+
+## Examples 1: lexical class {.smaller}
+```{r, fig.align = 'center'}
+ggplot(item_summary %>% filter(!is.na(lexical_class)), aes(y = production, x = age)) + theme_classic() +
+  geom_jitter(size = .5, col = "grey", alpha = .5) +
+  geom_smooth(method = "lm", formula = y ~ splines::ns(x, df = 2), aes(col = lexical_class))
+
+```  
+
+## Examples 2 {.smaller}
+```{r}
+items <- items_kor_ws %>% filter(category == "games_routines")
+items
+```
+
+## Examples 2 {.smaller}
+```{r}
+item_summary %>% filter(item_id %in% items$item_id) 
+```
+
+## Examples 2 {.smaller}
+```{r, fig.align='center'}
+item_summary %>% filter(item_id %in% items$item_id) %>%
+  ggplot(aes(y = production, x = age)) + theme_classic(base_family = "NanumGothic") +
+  facet_wrap(~definition, ncol = 5)+ labs(colour="Items") 
+```
+
+## Examples 2 {.smaller}
+```{r, fig.align='center'}
+item_summary %>% filter(item_id %in% items$item_id) %>%
+  ggplot(aes(y = production, x = age)) + theme_classic(base_family = "NanumGothic") +
+  facet_wrap(~definition, ncol = 5)+ labs(colour="Items") + geom_point(col = "grey", alpha = .5) 
+```
+
+## Examples 2 {.smaller}
+```{r, fig.align='center', fig.width = 8}
+item_summary %>% filter(item_id %in% items$item_id) %>%
+  ggplot(aes(y = production, x = age)) + theme_classic(base_family = "NanumGothic") +
+  facet_wrap(~definition, ncol = 5)+ labs(colour="Items") + geom_point(col = "grey", alpha = .5) +
+  geom_smooth(method = "lm", formula = y ~ splines::ns(x, df = 2))
+```
+
+## Examples 2 {.smaller}
+```{r, fig.align='center', fig.width = 8}
+item_summary %>% filter(item_id %in% items$item_id) %>%
+  ggplot(aes(y = production, x = age)) + theme_classic(base_family = "NanumGothic") +
+  facet_wrap(~paste(definition, uni_lemma, sep = "_"), ncol = 5)+ labs(colour="Items") + geom_point(col = "grey", alpha = .5) +
+  geom_smooth(method = "lm", formula = y ~ splines::ns(x, df = 2))
+```
+
+## Some ideas
+__Integrative data analysis__
+
+1) Estimate the age of acquisition (AoA) of items of interest from Wordbank 
+2) Measure the frequency of these items in child-directed speech from corpus data (e.g., **childes-db**) 
+- Examine the relationship between the (1) and (2)
+
+## Some ideas
+__Integrative data analysis__
+
+1) **Estimate the age of acquisition (AoA) of items of interest from Wordbank**
+2) Measure the frequency of these items in child-directed speech from corpus data (e.g., **childes-db**) 
+- Examine the relationship between the (1) and (2)
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+full_kor_ws <- get_instrument_data(language = "Korean", form = "WS", administrations = T, iteminfo = T) 
+full_kor_ws
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+full_kor_ws %>% 
+  dplyr::mutate(produces = !is.na(value) & value == 
+                  "produces", 
+                understands = !is.na(value) & 
+                  (value == "understands" | value == "produces")) 
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+full_kor_ws %>% 
+  dplyr::mutate(produces = !is.na(value) & value == 
+                  "produces", 
+                understands = !is.na(value) & 
+                  (value == "understands" | value == "produces")) %>% 
+  dplyr::select(age, num_item_id, uni_lemma, category, definition, produces, understands)
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+full_kor_ws %>% 
+  dplyr::mutate(produces = !is.na(value) & value == 
+                  "produces", 
+                understands = !is.na(value) & 
+                  (value == "understands" | value == "produces")) %>% 
+  dplyr::select(age, num_item_id, uni_lemma, category, definition, produces, understands) %>% 
+  tidyr::gather("measure_name", "value", produces, understands)
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center', rows.print=16}
+full_kor_ws %>% 
+  dplyr::mutate(produces = !is.na(value) & value == 
+                  "produces", 
+                understands = !is.na(value) & 
+                  (value == "understands" | value == "produces")) %>% 
+  dplyr::select(age, num_item_id, uni_lemma, category, definition, produces, understands) %>% 
+  tidyr::gather("measure_name", "value", produces, understands) %>% 
+  dplyr::filter(measure_name == "produces") 
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center', rows.print=16}
+full_kor_ws %>% 
+  dplyr::mutate(produces = !is.na(value) & value == 
+                  "produces", 
+                understands = !is.na(value) & 
+                  (value == "understands" | value == "produces")) %>% 
+  dplyr::select(age, num_item_id, uni_lemma, category, definition, produces, understands) %>% 
+  tidyr::gather("measure_name", "value", produces, understands) %>% 
+  dplyr::filter(measure_name == "produces") %>% 
+  dplyr::group_by(age, num_item_id, uni_lemma, category, definition) 
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center', rows.print=14}
+full_kor_ws %>% 
+  dplyr::mutate(produces = !is.na(value) & value == 
+                  "produces", 
+                understands = !is.na(value) & 
+                  (value == "understands" | value == "produces")) %>% 
+  dplyr::select(age, num_item_id, uni_lemma, category, definition, produces, understands) %>% 
+  tidyr::gather("measure_name", "value", produces, understands) %>% 
+  dplyr::filter(measure_name == "produces") %>% 
+  dplyr::group_by(age, num_item_id, uni_lemma, category, definition) %>% 
+  dplyr::summarise(num_true = sum(value), 
+                   num_false = dplyr::n() -  num_true) -> 
+  item_data; item_data
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center', rows.print=6}
+item_data %>% filter(definition == "파이팅") -> word_data; word_data
+```
+
+```{r, fig.align='center', rows.print=6}
+cbind(ages = word_data$age, 
+      data_prop = word_data$num_true/
+        (word_data$num_true + word_data$num_false)) %>% data.frame()
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center', rows.print=6}
+inv_logit <- function(x) 1/(exp(-x) + 1)
+ages <- dplyr::tibble(age = c(min(item_data$age):max(item_data$age)))
+ages
+```
+
+```{r, fig.align='center'}
+robustbase::glmrob(cbind(num_true, num_false) ~ age, 
+                   data = word_data, 
+                   family = "binomial")
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+robustbase::glmrob(cbind(num_true, num_false) ~ age, 
+                   data = word_data,
+                   family = "binomial") %>%
+  stats::predict(ages)
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+robustbase::glmrob(cbind(num_true, num_false) ~ age, 
+                   data = word_data,
+                   family = "binomial") %>%
+  stats::predict(ages) %>% 
+  inv_logit() -> mod_prop; cbind(ages, mod_prop)
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+inner_join(cbind(ages, mod_prop), 
+           cbind(ages, 
+      data_prop = word_data$num_true/
+        (word_data$num_true + word_data$num_false))) 
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+inner_join(cbind(ages, mod_prop), 
+           cbind(ages, 
+      data_prop = word_data$num_true/
+        (word_data$num_true + word_data$num_false))) %>%
+  gather(key = "type",
+         value = "proportion",
+         c(mod_prop, data_prop)) -> plot_prop; plot_prop
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+plot_prop %>% 
+  ggplot(aes(y = proportion, x = age, col = type)) + theme_classic(base_family = "NanumGothic") + ggtitle("파이팅") + coord_cartesian(ylim = c(0,1)) 
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+plot_prop %>% filter(type == "data_prop") %>%
+  ggplot(aes(y = proportion, x = age, col = type)) + theme_classic(base_family = "NanumGothic") + ggtitle("파이팅") + coord_cartesian(ylim = c(0,1)) +
+  geom_point() 
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+plot_prop %>% 
+  ggplot(aes(y = proportion, x = age, col = type)) + theme_classic(base_family = "NanumGothic") + ggtitle("파이팅") + coord_cartesian(ylim = c(0,1)) +
+  geom_point() 
+```
+
+## Examples 3 {.smaller}
+```{r, fig.align='center'}
+plot_prop %>% 
+  ggplot(aes(y = proportion, x = age, col = type)) + theme_classic(base_family = "NanumGothic") + ggtitle("파이팅") + coord_cartesian(ylim = c(0,1)) +
+  geom_point() + geom_hline(yintercept = .5, col = "grey70") + geom_vline(xintercept = 26, col = "grey70")
+```
+
+
+## Resources
+
+__MacArthur-Bates Communicative Development Inventories__<br>
+  – [mb-cdi.stanford.edu](http://mb-cdi.stanford.edu)<br>
+
+__Wordbank__<br>
+  – [wordbank.stanford.edu](http://wordbank.stanford.edu)<br>
+  – [github.com/langcog/wordbankr](https://github.com/langcog/wordbankr)<br>
+
+__Learning R__<br>
+  - [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garrett Grolemund<br>
+  - [Data Visualization with ggplot2](https://ggplot2-book.org/) by Hadley Wickham<br>
+
+  
+  

@@ -1,0 +1,643 @@
+downloaded,language,measure,uni_lemma,words,age,prop
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,16,0.83
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,17,0.89
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,18,0.85
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,19,0.86
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,20,0.97
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,21,0.98
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,22,0.96
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,23,0.96
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,24,0.97
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,25,1
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,26,1
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,27,1
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,28,0.98
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,29,1
+2023-04-18,Cantonese,produces,MOMMY,媽媽/媽咪,30,1
+2023-04-18,Croatian,produces,MOMMY,mama,8,0.17
+2023-04-18,Croatian,produces,MOMMY,mama,9,0.2
+2023-04-18,Croatian,produces,MOMMY,mama,10,0.55
+2023-04-18,Croatian,produces,MOMMY,mama,11,0.68
+2023-04-18,Croatian,produces,MOMMY,mama,12,0.6
+2023-04-18,Croatian,produces,MOMMY,mama,13,0.62
+2023-04-18,Croatian,produces,MOMMY,mama,14,0.57
+2023-04-18,Croatian,produces,MOMMY,mama,15,0.58
+2023-04-18,Croatian,produces,MOMMY,mama,16,0.83
+2023-04-18,Croatian,produces,MOMMY,mama,17,0.92
+2023-04-18,Croatian,produces,MOMMY,mama,18,0.95
+2023-04-18,Croatian,produces,MOMMY,mama,19,0.95
+2023-04-18,Croatian,produces,MOMMY,mama,20,1
+2023-04-18,Croatian,produces,MOMMY,mama,21,0.97
+2023-04-18,Croatian,produces,MOMMY,mama,22,0.92
+2023-04-18,Croatian,produces,MOMMY,mama,23,1
+2023-04-18,Croatian,produces,MOMMY,mama,24,0.93
+2023-04-18,Croatian,produces,MOMMY,mama,25,1
+2023-04-18,Croatian,produces,MOMMY,mama,26,0.97
+2023-04-18,Croatian,produces,MOMMY,mama,27,1
+2023-04-18,Croatian,produces,MOMMY,mama,28,1
+2023-04-18,Croatian,produces,MOMMY,mama,29,1
+2023-04-18,Croatian,produces,MOMMY,mama,30,1
+2023-04-18,Danish,produces,MOMMY,mor,8,0.03
+2023-04-18,Danish,produces,MOMMY,mor,9,0.02
+2023-04-18,Danish,produces,MOMMY,mor,10,0.04
+2023-04-18,Danish,produces,MOMMY,mor,11,0.1
+2023-04-18,Danish,produces,MOMMY,mor,12,0.14
+2023-04-18,Danish,produces,MOMMY,mor,13,0.24
+2023-04-18,Danish,produces,MOMMY,mor,14,0.3
+2023-04-18,Danish,produces,MOMMY,mor,15,0.34
+2023-04-18,Danish,produces,MOMMY,mor,16,0.52
+2023-04-18,Danish,produces,MOMMY,mor,17,0.64
+2023-04-18,Danish,produces,MOMMY,mor,18,0.75
+2023-04-18,Danish,produces,MOMMY,mor,19,0.78
+2023-04-18,Danish,produces,MOMMY,mor,20,0.87
+2023-04-18,Danish,produces,MOMMY,mor,21,0.89
+2023-04-18,Danish,produces,MOMMY,mor,22,0.96
+2023-04-18,Danish,produces,MOMMY,mor,23,0.95
+2023-04-18,Danish,produces,MOMMY,mor,24,0.96
+2023-04-18,Danish,produces,MOMMY,mor,25,0.96
+2023-04-18,Danish,produces,MOMMY,mor,26,0.99
+2023-04-18,Danish,produces,MOMMY,mor,27,0.98
+2023-04-18,Danish,produces,MOMMY,mor,28,0.97
+2023-04-18,Danish,produces,MOMMY,mor,29,0.99
+2023-04-18,Danish,produces,MOMMY,mor,30,0.99
+2023-04-18,Danish,produces,MOMMY,mor,31,0.99
+2023-04-18,Danish,produces,MOMMY,mor,32,0.99
+2023-04-18,Danish,produces,MOMMY,mor,33,0.99
+2023-04-18,Danish,produces,MOMMY,mor,34,1
+2023-04-18,Danish,produces,MOMMY,mor,35,1
+2023-04-18,Danish,produces,MOMMY,mor,36,0.99
+2023-04-18,English (American),produces,MOMMY,mommy*,8,0.16
+2023-04-18,English (American),produces,MOMMY,mommy*,9,0.24
+2023-04-18,English (American),produces,MOMMY,mommy*,10,0.43
+2023-04-18,English (American),produces,MOMMY,mommy*,11,0.45
+2023-04-18,English (American),produces,MOMMY,mommy*,12,0.49
+2023-04-18,English (American),produces,MOMMY,mommy*,13,0.57
+2023-04-18,English (American),produces,MOMMY,mommy*,14,0.58
+2023-04-18,English (American),produces,MOMMY,mommy*,15,0.67
+2023-04-18,English (American),produces,MOMMY,mommy*,16,0.84
+2023-04-18,English (American),produces,MOMMY,mommy*,17,0.84
+2023-04-18,English (American),produces,MOMMY,mommy*,18,0.88
+2023-04-18,English (American),produces,MOMMY,mommy*,19,0.93
+2023-04-18,English (American),produces,MOMMY,mommy*,20,0.95
+2023-04-18,English (American),produces,MOMMY,mommy*,21,0.95
+2023-04-18,English (American),produces,MOMMY,mommy*,22,0.95
+2023-04-18,English (American),produces,MOMMY,mommy*,23,0.91
+2023-04-18,English (American),produces,MOMMY,mommy*,24,0.96
+2023-04-18,English (American),produces,MOMMY,mommy*,25,0.96
+2023-04-18,English (American),produces,MOMMY,mommy*,26,0.96
+2023-04-18,English (American),produces,MOMMY,mommy*,27,0.97
+2023-04-18,English (American),produces,MOMMY,mommy*,28,0.98
+2023-04-18,English (American),produces,MOMMY,mommy*,29,0.97
+2023-04-18,English (American),produces,MOMMY,mommy*,30,0.95
+2023-04-18,French (Quebecois),produces,MOMMY,maman,8,0.17
+2023-04-18,French (Quebecois),produces,MOMMY,maman,9,0.25
+2023-04-18,French (Quebecois),produces,MOMMY,maman,10,0.33
+2023-04-18,French (Quebecois),produces,MOMMY,maman,11,0.45
+2023-04-18,French (Quebecois),produces,MOMMY,maman,12,0.64
+2023-04-18,French (Quebecois),produces,MOMMY,maman,13,0.59
+2023-04-18,French (Quebecois),produces,MOMMY,maman,14,0.66
+2023-04-18,French (Quebecois),produces,MOMMY,maman,15,0.71
+2023-04-18,French (Quebecois),produces,MOMMY,maman,16,0.82
+2023-04-18,French (Quebecois),produces,MOMMY,maman,17,0.96
+2023-04-18,French (Quebecois),produces,MOMMY,maman,18,0.98
+2023-04-18,French (Quebecois),produces,MOMMY,maman,19,0.98
+2023-04-18,French (Quebecois),produces,MOMMY,maman,20,0.95
+2023-04-18,French (Quebecois),produces,MOMMY,maman,21,0.97
+2023-04-18,French (Quebecois),produces,MOMMY,maman,22,0.95
+2023-04-18,French (Quebecois),produces,MOMMY,maman,23,0.94
+2023-04-18,French (Quebecois),produces,MOMMY,maman,24,0.95
+2023-04-18,French (Quebecois),produces,MOMMY,maman,25,0.98
+2023-04-18,French (Quebecois),produces,MOMMY,maman,26,1
+2023-04-18,French (Quebecois),produces,MOMMY,maman,27,1
+2023-04-18,French (Quebecois),produces,MOMMY,maman,28,0.98
+2023-04-18,French (Quebecois),produces,MOMMY,maman,29,0.97
+2023-04-18,French (Quebecois),produces,MOMMY,maman,30,0.95
+2023-04-18,German,produces,MOMMY,Mama,18,1
+2023-04-18,German,produces,MOMMY,Mama,19,0.99
+2023-04-18,German,produces,MOMMY,Mama,20,0.98
+2023-04-18,German,produces,MOMMY,Mama,21,0.99
+2023-04-18,German,produces,MOMMY,Mama,22,0.95
+2023-04-18,German,produces,MOMMY,Mama,23,0.99
+2023-04-18,German,produces,MOMMY,Mama,24,0.99
+2023-04-18,German,produces,MOMMY,Mama,25,0.98
+2023-04-18,German,produces,MOMMY,Mama,26,1
+2023-04-18,German,produces,MOMMY,Mama,27,0.98
+2023-04-18,German,produces,MOMMY,Mama,28,0.99
+2023-04-18,German,produces,MOMMY,Mama,29,1
+2023-04-18,German,produces,MOMMY,Mama,30,1
+2023-04-18,Italian,produces,MOMMY,mamma,7,0
+2023-04-18,Italian,produces,MOMMY,mamma,8,0.15
+2023-04-18,Italian,produces,MOMMY,mamma,9,0.26
+2023-04-18,Italian,produces,MOMMY,mamma,10,0.26
+2023-04-18,Italian,produces,MOMMY,mamma,11,0.43
+2023-04-18,Italian,produces,MOMMY,mamma,12,0.64
+2023-04-18,Italian,produces,MOMMY,mamma,13,0.52
+2023-04-18,Italian,produces,MOMMY,mamma,14,0.62
+2023-04-18,Italian,produces,MOMMY,mamma,15,0.71
+2023-04-18,Italian,produces,MOMMY,mamma,16,0.73
+2023-04-18,Italian,produces,MOMMY,mamma,17,0.83
+2023-04-18,Italian,produces,MOMMY,mamma,18,0.89
+2023-04-18,Italian,produces,MOMMY,mamma,19,0.91
+2023-04-18,Italian,produces,MOMMY,mamma,20,0.94
+2023-04-18,Italian,produces,MOMMY,mamma,21,0.93
+2023-04-18,Italian,produces,MOMMY,mamma,22,0.91
+2023-04-18,Italian,produces,MOMMY,mamma,23,0.97
+2023-04-18,Italian,produces,MOMMY,mamma,24,0.96
+2023-04-18,Italian,produces,MOMMY,mamma,25,1
+2023-04-18,Italian,produces,MOMMY,mamma,26,1
+2023-04-18,Italian,produces,MOMMY,mamma,27,0.98
+2023-04-18,Italian,produces,MOMMY,mamma,28,0.98
+2023-04-18,Italian,produces,MOMMY,mamma,29,1
+2023-04-18,Italian,produces,MOMMY,mamma,30,0.99
+2023-04-18,Italian,produces,MOMMY,mamma,31,0.95
+2023-04-18,Italian,produces,MOMMY,mamma,32,1
+2023-04-18,Italian,produces,MOMMY,mamma,33,1
+2023-04-18,Italian,produces,MOMMY,mamma,34,1
+2023-04-18,Italian,produces,MOMMY,mamma,35,1
+2023-04-18,Italian,produces,MOMMY,mamma,36,0.95
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,12,0.76
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,13,0.74
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,14,0.71
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,15,0.74
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,16,0.93
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,17,0.97
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,18,0.97
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,19,0.92
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,20,0.97
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,21,0.98
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,22,0.96
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,23,0.98
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,24,1
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,25,0.98
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,26,0.97
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,27,0.99
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,28,1
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,29,0.98
+2023-04-18,Mandarin (Beijing),produces,MOMMY,妈妈,30,1
+2023-04-18,Norwegian,produces,MOMMY,mamma,8,0.18
+2023-04-18,Norwegian,produces,MOMMY,mamma,9,0.21
+2023-04-18,Norwegian,produces,MOMMY,mamma,10,0.35
+2023-04-18,Norwegian,produces,MOMMY,mamma,11,0.46
+2023-04-18,Norwegian,produces,MOMMY,mamma,12,0.51
+2023-04-18,Norwegian,produces,MOMMY,mamma,13,0.52
+2023-04-18,Norwegian,produces,MOMMY,mamma,14,0.59
+2023-04-18,Norwegian,produces,MOMMY,mamma,15,0.61
+2023-04-18,Norwegian,produces,MOMMY,"mamma, mamma/mor",16,0.73
+2023-04-18,Norwegian,produces,MOMMY,"mamma, mamma/mor",17,0.83
+2023-04-18,Norwegian,produces,MOMMY,"mamma, mamma/mor",18,0.87
+2023-04-18,Norwegian,produces,MOMMY,"mamma, mamma/mor",19,0.91
+2023-04-18,Norwegian,produces,MOMMY,"mamma, mamma/mor",20,0.94
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,21,0.98
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,22,0.95
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,23,0.97
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,24,0.97
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,25,0.97
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,26,0.99
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,27,0.98
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,28,0.99
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,29,0.98
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,30,0.98
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,31,0.99
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,32,0.98
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,33,0.99
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,34,0.98
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,35,0.98
+2023-04-18,Norwegian,produces,MOMMY,mamma/mor,36,0.99
+2023-04-18,Russian,produces,MOMMY,мама,8,0.22
+2023-04-18,Russian,produces,MOMMY,мама,9,0.55
+2023-04-18,Russian,produces,MOMMY,мама,10,0.51
+2023-04-18,Russian,produces,MOMMY,мама,11,0.65
+2023-04-18,Russian,produces,MOMMY,мама,12,0.76
+2023-04-18,Russian,produces,MOMMY,мама,13,0.79
+2023-04-18,Russian,produces,MOMMY,мама,14,0.77
+2023-04-18,Russian,produces,MOMMY,мама,15,0.8
+2023-04-18,Russian,produces,MOMMY,мама,16,0.88
+2023-04-18,Russian,produces,MOMMY,мама,17,0.91
+2023-04-18,Russian,produces,MOMMY,мама,18,0.96
+2023-04-18,Russian,produces,MOMMY,мама,19,0.98
+2023-04-18,Russian,produces,MOMMY,мама,20,0.96
+2023-04-18,Russian,produces,MOMMY,мама,21,0.95
+2023-04-18,Russian,produces,MOMMY,мама,22,1
+2023-04-18,Russian,produces,MOMMY,мама,23,1
+2023-04-18,Russian,produces,MOMMY,мама,24,0.98
+2023-04-18,Russian,produces,MOMMY,мама,25,1
+2023-04-18,Russian,produces,MOMMY,мама,26,1
+2023-04-18,Russian,produces,MOMMY,мама,27,1
+2023-04-18,Russian,produces,MOMMY,мама,28,0.95
+2023-04-18,Russian,produces,MOMMY,мама,29,1
+2023-04-18,Russian,produces,MOMMY,мама,30,0.99
+2023-04-18,Russian,produces,MOMMY,мама,31,1
+2023-04-18,Russian,produces,MOMMY,мама,32,0.98
+2023-04-18,Russian,produces,MOMMY,мама,33,0.98
+2023-04-18,Russian,produces,MOMMY,мама,34,1
+2023-04-18,Russian,produces,MOMMY,мама,35,1
+2023-04-18,Russian,produces,MOMMY,мама,36,1
+2023-04-18,Slovak,produces,MOMMY,mama,8,0.29
+2023-04-18,Slovak,produces,MOMMY,mama,9,0.41
+2023-04-18,Slovak,produces,MOMMY,mama,10,0.53
+2023-04-18,Slovak,produces,MOMMY,mama,11,0.66
+2023-04-18,Slovak,produces,MOMMY,mama,12,0.72
+2023-04-18,Slovak,produces,MOMMY,mama,13,0.78
+2023-04-18,Slovak,produces,MOMMY,mama,14,0.83
+2023-04-18,Slovak,produces,MOMMY,mama,15,0.79
+2023-04-18,Slovak,produces,MOMMY,mama,16,0.75
+2023-04-18,Slovak,produces,MOMMY,mama*,17,0.87
+2023-04-18,Slovak,produces,MOMMY,mama*,18,0.95
+2023-04-18,Slovak,produces,MOMMY,mama*,19,0.93
+2023-04-18,Slovak,produces,MOMMY,mama*,20,0.95
+2023-04-18,Slovak,produces,MOMMY,mama*,21,0.96
+2023-04-18,Slovak,produces,MOMMY,mama*,22,0.91
+2023-04-18,Slovak,produces,MOMMY,mama*,23,0.93
+2023-04-18,Slovak,produces,MOMMY,mama*,24,0.98
+2023-04-18,Slovak,produces,MOMMY,mama*,25,0.94
+2023-04-18,Slovak,produces,MOMMY,mama*,26,0.97
+2023-04-18,Slovak,produces,MOMMY,mama*,27,0.98
+2023-04-18,Slovak,produces,MOMMY,mama*,28,0.98
+2023-04-18,Slovak,produces,MOMMY,mama*,29,0.97
+2023-04-18,Slovak,produces,MOMMY,mama*,30,0.98
+2023-04-18,Slovak,produces,MOMMY,mama*,31,0.97
+2023-04-18,Slovak,produces,MOMMY,mama*,32,1
+2023-04-18,Slovak,produces,MOMMY,mama*,33,1
+2023-04-18,Slovak,produces,MOMMY,mama*,34,0.96
+2023-04-18,Slovak,produces,MOMMY,mama*,35,0.96
+2023-04-18,Slovak,produces,MOMMY,mama*,36,1
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,8,0.15
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,9,0.22
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,10,0.37
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,11,0.34
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,12,0.51
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,13,0.58
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,14,0.58
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá/mami,15,0.66
+2023-04-18,Spanish (Mexican),produces,MOMMY,"mamá/mami, mamá",16,0.8
+2023-04-18,Spanish (Mexican),produces,MOMMY,"mamá/mami, mamá",17,0.83
+2023-04-18,Spanish (Mexican),produces,MOMMY,"mamá/mami, mamá",18,0.84
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,19,0.93
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,20,0.95
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,21,0.96
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,22,0.96
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,23,0.9
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,24,0.93
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,25,0.92
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,26,0.9
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,27,0.96
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,28,0.97
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,29,0.97
+2023-04-18,Spanish (Mexican),produces,MOMMY,mamá,30,0.95
+2023-04-18,Swedish,produces,MOMMY,mamma,8,0.12
+2023-04-18,Swedish,produces,MOMMY,mamma,9,1
+2023-04-18,Swedish,produces,MOMMY,mamma,10,0.33
+2023-04-18,Swedish,produces,MOMMY,mamma,11,0.33
+2023-04-18,Swedish,produces,MOMMY,mamma,12,0.54
+2023-04-18,Swedish,produces,MOMMY,mamma,13,0.57
+2023-04-18,Swedish,produces,MOMMY,mamma,14,0.61
+2023-04-18,Swedish,produces,MOMMY,mamma,15,0.69
+2023-04-18,Swedish,produces,MOMMY,mamma,16,0.83
+2023-04-18,Swedish,produces,MOMMY,mamma,19,0.92
+2023-04-18,Swedish,produces,MOMMY,mamma,22,0.97
+2023-04-18,Swedish,produces,MOMMY,mamma,25,0.98
+2023-04-18,Swedish,produces,MOMMY,mamma,28,0.99
+2023-04-18,Turkish,produces,MOMMY,Anne,8,0.22
+2023-04-18,Turkish,produces,MOMMY,Anne,9,0.38
+2023-04-18,Turkish,produces,MOMMY,Anne,10,0.41
+2023-04-18,Turkish,produces,MOMMY,Anne,11,0.42
+2023-04-18,Turkish,produces,MOMMY,Anne,12,0.48
+2023-04-18,Turkish,produces,MOMMY,Anne,13,0.46
+2023-04-18,Turkish,produces,MOMMY,Anne,14,0.65
+2023-04-18,Turkish,produces,MOMMY,Anne,15,0.69
+2023-04-18,Turkish,produces,MOMMY,Anne,16,0.84
+2023-04-18,Turkish,produces,MOMMY,Anne,17,0.95
+2023-04-18,Turkish,produces,MOMMY,Anne,18,0.93
+2023-04-18,Turkish,produces,MOMMY,Anne,19,0.93
+2023-04-18,Turkish,produces,MOMMY,Anne,20,0.98
+2023-04-18,Turkish,produces,MOMMY,Anne,21,0.96
+2023-04-18,Turkish,produces,MOMMY,Anne,22,0.95
+2023-04-18,Turkish,produces,MOMMY,Anne,23,0.97
+2023-04-18,Turkish,produces,MOMMY,Anne,24,0.98
+2023-04-18,Turkish,produces,MOMMY,Anne,25,0.98
+2023-04-18,Turkish,produces,MOMMY,Anne,26,0.99
+2023-04-18,Turkish,produces,MOMMY,Anne,27,1
+2023-04-18,Turkish,produces,MOMMY,Anne,28,0.99
+2023-04-18,Turkish,produces,MOMMY,Anne,29,0.97
+2023-04-18,Turkish,produces,MOMMY,Anne,30,0.99
+2023-04-18,Turkish,produces,MOMMY,Anne,31,0.99
+2023-04-18,Turkish,produces,MOMMY,Anne,32,0.99
+2023-04-18,Turkish,produces,MOMMY,Anne,33,1
+2023-04-18,Turkish,produces,MOMMY,Anne,34,0.99
+2023-04-18,Turkish,produces,MOMMY,Anne,35,0.96
+2023-04-18,Turkish,produces,MOMMY,Anne,36,0.99
+2023-04-18,English (British),produces,MOMMY,mummy,12,0.63
+2023-04-18,English (British),produces,MOMMY,mummy,13,0.57
+2023-04-18,English (British),produces,MOMMY,mummy,14,0.64
+2023-04-18,English (British),produces,MOMMY,mummy,15,0.64
+2023-04-18,English (British),produces,MOMMY,mummy,16,0.64
+2023-04-18,English (British),produces,MOMMY,mummy,17,0.79
+2023-04-18,English (British),produces,MOMMY,mummy,18,0.75
+2023-04-18,English (British),produces,MOMMY,mummy,19,0.82
+2023-04-18,English (British),produces,MOMMY,"mummy/mum, mummy",20,0.86
+2023-04-18,English (British),produces,MOMMY,"mummy/mum, mummy",21,0.93
+2023-04-18,English (British),produces,MOMMY,"mummy/mum, mummy",22,0.94
+2023-04-18,English (British),produces,MOMMY,"mummy/mum, mummy",23,0.95
+2023-04-18,English (British),produces,MOMMY,"mummy/mum, mummy",24,0.96
+2023-04-18,English (British),produces,MOMMY,"mummy/mum, mummy",25,0.95
+2023-04-18,English (British),produces,MOMMY,mummy/mum,26,0.96
+2023-04-18,English (British),produces,MOMMY,mummy/mum,27,0.96
+2023-04-18,English (British),produces,MOMMY,mummy/mum,28,0.89
+2023-04-18,English (British),produces,MOMMY,mummy/mum,29,0.91
+2023-04-18,English (British),produces,MOMMY,mummy/mum,30,1
+2023-04-18,English (British),produces,MOMMY,mummy/mum,31,1
+2023-04-18,English (British),produces,MOMMY,mummy/mum,32,0.81
+2023-04-18,English (British),produces,MOMMY,mummy/mum,33,0.93
+2023-04-18,English (British),produces,MOMMY,mummy/mum,34,0.8
+2023-04-18,English (British),produces,MOMMY,mummy/mum,35,0.8
+2023-04-18,Kigiriama,produces,MOMMY,Mama,8,0.6
+2023-04-18,Kigiriama,produces,MOMMY,Mama,9,0.41
+2023-04-18,Kigiriama,produces,MOMMY,Mama,10,0.4
+2023-04-18,Kigiriama,produces,MOMMY,Mama,11,0.86
+2023-04-18,Kigiriama,produces,MOMMY,Mama,12,0.57
+2023-04-18,Kigiriama,produces,MOMMY,Mama,13,0.78
+2023-04-18,Kigiriama,produces,MOMMY,Mama,14,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,15,0.88
+2023-04-18,Kigiriama,produces,MOMMY,Mama,16,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,17,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,18,0.92
+2023-04-18,Kigiriama,produces,MOMMY,Mama,19,0.88
+2023-04-18,Kigiriama,produces,MOMMY,Mama,20,0.93
+2023-04-18,Kigiriama,produces,MOMMY,Mama,21,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,22,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,23,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,24,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,25,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,26,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,27,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,28,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,29,1
+2023-04-18,Kigiriama,produces,MOMMY,Mama,30,1
+2023-04-18,Czech,produces,MOMMY,máma,16,0.93
+2023-04-18,Czech,produces,MOMMY,máma,17,0.9
+2023-04-18,Czech,produces,MOMMY,máma,18,0.93
+2023-04-18,Czech,produces,MOMMY,máma,19,0.96
+2023-04-18,Czech,produces,MOMMY,máma,20,1
+2023-04-18,Czech,produces,MOMMY,máma,21,1
+2023-04-18,Czech,produces,MOMMY,máma,22,0.94
+2023-04-18,Czech,produces,MOMMY,máma,23,0.98
+2023-04-18,Czech,produces,MOMMY,máma,24,0.97
+2023-04-18,Czech,produces,MOMMY,máma,25,1
+2023-04-18,Czech,produces,MOMMY,máma,26,1
+2023-04-18,Czech,produces,MOMMY,máma,27,0.95
+2023-04-18,Czech,produces,MOMMY,máma,28,1
+2023-04-18,Czech,produces,MOMMY,máma,29,0.95
+2023-04-18,Czech,produces,MOMMY,máma,30,1
+2023-04-18,English (Australian),produces,MOMMY,mummy,12,0.48
+2023-04-18,English (Australian),produces,MOMMY,mummy,13,0.86
+2023-04-18,English (Australian),produces,MOMMY,mummy,14,0.87
+2023-04-18,English (Australian),produces,MOMMY,mummy,15,0.96
+2023-04-18,English (Australian),produces,MOMMY,mummy,16,0.9
+2023-04-18,English (Australian),produces,MOMMY,mummy,17,0.95
+2023-04-18,English (Australian),produces,MOMMY,mummy,18,0.96
+2023-04-18,English (Australian),produces,MOMMY,mummy,19,0.98
+2023-04-18,English (Australian),produces,MOMMY,mummy,20,0.97
+2023-04-18,English (Australian),produces,MOMMY,mummy,21,0.99
+2023-04-18,English (Australian),produces,MOMMY,mummy,22,0.99
+2023-04-18,English (Australian),produces,MOMMY,mummy,23,0.99
+2023-04-18,English (Australian),produces,MOMMY,mummy,24,1
+2023-04-18,English (Australian),produces,MOMMY,mummy,25,0.99
+2023-04-18,English (Australian),produces,MOMMY,mummy,26,0.96
+2023-04-18,English (Australian),produces,MOMMY,mummy,27,0.97
+2023-04-18,English (Australian),produces,MOMMY,mummy,28,1
+2023-04-18,English (Australian),produces,MOMMY,mummy,29,1
+2023-04-18,English (Australian),produces,MOMMY,mummy,30,1
+2023-04-18,Latvian,produces,MOMMY,māte*,8,0.06
+2023-04-18,Latvian,produces,MOMMY,māte*,9,0.22
+2023-04-18,Latvian,produces,MOMMY,māte*,10,0.15
+2023-04-18,Latvian,produces,MOMMY,māte*,11,0.33
+2023-04-18,Latvian,produces,MOMMY,māte*,12,0.5
+2023-04-18,Latvian,produces,MOMMY,māte*,13,0.32
+2023-04-18,Latvian,produces,MOMMY,māte*,14,0.64
+2023-04-18,Latvian,produces,MOMMY,māte*,15,0.45
+2023-04-18,Latvian,produces,MOMMY,māte*,16,0.56
+2023-04-18,Latvian,produces,MOMMY,māte*,17,0.93
+2023-04-18,Latvian,produces,MOMMY,māte*,18,0.86
+2023-04-18,Latvian,produces,MOMMY,māte*,19,0.93
+2023-04-18,Latvian,produces,MOMMY,māte*,20,0.94
+2023-04-18,Latvian,produces,MOMMY,māte*,21,0.92
+2023-04-18,Latvian,produces,MOMMY,māte*,22,0.91
+2023-04-18,Latvian,produces,MOMMY,māte*,23,0.92
+2023-04-18,Latvian,produces,MOMMY,māte*,24,0.97
+2023-04-18,Latvian,produces,MOMMY,māte*,25,0.83
+2023-04-18,Latvian,produces,MOMMY,māte*,26,1
+2023-04-18,Latvian,produces,MOMMY,māte*,27,0.94
+2023-04-18,Latvian,produces,MOMMY,māte*,28,1
+2023-04-18,Latvian,produces,MOMMY,māte*,29,0.92
+2023-04-18,Latvian,produces,MOMMY,māte*,30,0.88
+2023-04-18,Latvian,produces,MOMMY,māte*,31,0.89
+2023-04-18,Latvian,produces,MOMMY,māte*,32,0.96
+2023-04-18,Latvian,produces,MOMMY,māte*,33,0.97
+2023-04-18,Latvian,produces,MOMMY,māte*,34,0.94
+2023-04-18,Latvian,produces,MOMMY,māte*,35,0.95
+2023-04-18,Latvian,produces,MOMMY,māte*,36,0.95
+2023-04-18,Korean,produces,MOMMY,엄마,8,0.67
+2023-04-18,Korean,produces,MOMMY,엄마,9,0.62
+2023-04-18,Korean,produces,MOMMY,엄마,10,0.57
+2023-04-18,Korean,produces,MOMMY,엄마,11,0.71
+2023-04-18,Korean,produces,MOMMY,엄마,12,0.76
+2023-04-18,Korean,produces,MOMMY,엄마,13,0.74
+2023-04-18,Korean,produces,MOMMY,엄마,14,0.81
+2023-04-18,Korean,produces,MOMMY,엄마,15,0.76
+2023-04-18,Korean,produces,MOMMY,엄마,16,0.75
+2023-04-18,Korean,produces,MOMMY,엄마,17,0.75
+2023-04-18,Korean,produces,MOMMY,엄마,18,0.86
+2023-04-18,Korean,produces,MOMMY,엄마,19,0.83
+2023-04-18,Korean,produces,MOMMY,엄마,20,0.81
+2023-04-18,Korean,produces,MOMMY,엄마,21,0.92
+2023-04-18,Korean,produces,MOMMY,엄마,22,0.89
+2023-04-18,Korean,produces,MOMMY,엄마,23,0.81
+2023-04-18,Korean,produces,MOMMY,엄마,24,0.84
+2023-04-18,Korean,produces,MOMMY,엄마,25,0.92
+2023-04-18,Korean,produces,MOMMY,엄마,26,0.91
+2023-04-18,Korean,produces,MOMMY,엄마,27,0.97
+2023-04-18,Korean,produces,MOMMY,엄마,28,0.95
+2023-04-18,Korean,produces,MOMMY,엄마,29,1
+2023-04-18,Korean,produces,MOMMY,엄마,30,0.91
+2023-04-18,Korean,produces,MOMMY,엄마,31,0.99
+2023-04-18,Korean,produces,MOMMY,엄마,32,0.97
+2023-04-18,Korean,produces,MOMMY,엄마,33,0.97
+2023-04-18,Korean,produces,MOMMY,엄마,34,0.97
+2023-04-18,Korean,produces,MOMMY,엄마,35,0.97
+2023-04-18,Korean,produces,MOMMY,엄마,36,0.99
+2023-04-18,French (French),produces,MOMMY,maman,8,0.11
+2023-04-18,French (French),produces,MOMMY,maman,9,0
+2023-04-18,French (French),produces,MOMMY,maman,11,0.14
+2023-04-18,French (French),produces,MOMMY,maman,12,0.23
+2023-04-18,French (French),produces,MOMMY,maman,13,0.35
+2023-04-18,French (French),produces,MOMMY,maman,14,0.62
+2023-04-18,French (French),produces,MOMMY,maman,15,0.5
+2023-04-18,French (French),produces,MOMMY,maman,16,0.76
+2023-04-18,French (French),produces,MOMMY,maman,17,0.88
+2023-04-18,French (French),produces,MOMMY,maman,18,0
+2023-04-18,French (French),produces,MOMMY,maman,19,0.91
+2023-04-18,French (French),produces,MOMMY,maman,20,0.98
+2023-04-18,French (French),produces,MOMMY,maman,21,0.95
+2023-04-18,French (French),produces,MOMMY,maman,22,0.95
+2023-04-18,French (French),produces,MOMMY,maman,23,0.92
+2023-04-18,French (French),produces,MOMMY,maman,24,0.96
+2023-04-18,French (French),produces,MOMMY,maman,25,0.98
+2023-04-18,French (French),produces,MOMMY,maman,26,0.97
+2023-04-18,French (French),produces,MOMMY,maman,27,0.96
+2023-04-18,French (French),produces,MOMMY,maman,28,1
+2023-04-18,French (French),produces,MOMMY,maman,29,1
+2023-04-18,French (French),produces,MOMMY,maman,30,0.93
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,8,0.12
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,9,0.31
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,10,0.37
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,11,0.44
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,12,0.54
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,13,0.62
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,14,0.73
+2023-04-18,Spanish (European),produces,MOMMY,mamá/mami,15,0.82
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),16,0.85
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),17,0.95
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),18,0.94
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),19,1
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),20,0.94
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),21,0.98
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),22,0.97
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),23,1
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),24,0.96
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),25,0.97
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),26,1
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),27,1
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),28,1
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),29,1
+2023-04-18,Spanish (European),produces,MOMMY,mamá (mami),30,1
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,8,0.05
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,9,0.08
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,10,0.2
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,11,0.17
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,12,0.31
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,13,0.46
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,14,0.43
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,15,0.55
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,16,0.74
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,17,0.76
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,18,0.85
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,19,0.84
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,20,0.87
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,21,0.89
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,22,0.94
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,23,0.93
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,24,0.93
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,25,0.94
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,26,0.94
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,27,0.97
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,28,0.95
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,29,0.93
+2023-04-18,Portuguese (European),produces,MOMMY,Mãe,30,0.93
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,8,0.09
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,9,0.13
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,10,0.24
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,11,0.33
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,12,0.38
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,13,0.54
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,14,0.74
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,15,0.73
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,16,0.83
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,17,0.98
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,18,0.94
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,19,0.98
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,20,0.98
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,21,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,22,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,23,0.96
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,24,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,25,0.97
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,26,1
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,27,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,28,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,29,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,30,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,31,1
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,32,1
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,33,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,34,1
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,35,0.99
+2023-04-18,Mandarin (Taiwanese),produces,MOMMY,媽媽/媽咪,36,1
+2023-04-18,Dutch,produces,MOMMY,mama,8,0.14
+2023-04-18,Dutch,produces,MOMMY,mama,9,0.18
+2023-04-18,Dutch,produces,MOMMY,mama,10,0.29
+2023-04-18,Dutch,produces,MOMMY,mama,11,0.58
+2023-04-18,Dutch,produces,MOMMY,mama,12,0.46
+2023-04-18,Dutch,produces,MOMMY,mama,13,0.78
+2023-04-18,Dutch,produces,MOMMY,mama,14,0.7
+2023-04-18,Dutch,produces,MOMMY,mama,15,0.82
+2023-04-18,Dutch,produces,MOMMY,mama,16,0.8
+2023-04-18,Dutch,produces,MOMMY,mama,17,0.91
+2023-04-18,Dutch,produces,MOMMY,mama,18,0.77
+2023-04-18,Dutch,produces,MOMMY,mama,19,0.58
+2023-04-18,Dutch,produces,MOMMY,mama,20,0.85
+2023-04-18,Dutch,produces,MOMMY,mama,21,0.92
+2023-04-18,Dutch,produces,MOMMY,mama,22,0.86
+2023-04-18,Dutch,produces,MOMMY,mama,23,0.94
+2023-04-18,Dutch,produces,MOMMY,mama,24,1
+2023-04-18,Dutch,produces,MOMMY,mama,25,1
+2023-04-18,Dutch,produces,MOMMY,mama,26,1
+2023-04-18,Dutch,produces,MOMMY,mama,27,0.8
+2023-04-18,Dutch,produces,MOMMY,mama,28,1
+2023-04-18,Dutch,produces,MOMMY,mama,29,1
+2023-04-18,Dutch,produces,MOMMY,mama,30,1
+2023-04-18,Dutch,produces,MOMMY,mama,31,1
+2023-04-18,Hungarian,produces,MOMMY,*anya,16,0.71
+2023-04-18,Hungarian,produces,MOMMY,*anya,17,0.94
+2023-04-18,Hungarian,produces,MOMMY,*anya,18,0.94
+2023-04-18,Hungarian,produces,MOMMY,*anya,19,0.92
+2023-04-18,Hungarian,produces,MOMMY,*anya,20,0.83
+2023-04-18,Hungarian,produces,MOMMY,*anya,21,0.97
+2023-04-18,Hungarian,produces,MOMMY,*anya,22,1
+2023-04-18,Hungarian,produces,MOMMY,*anya,23,1
+2023-04-18,Hungarian,produces,MOMMY,*anya,24,0.95
+2023-04-18,Hungarian,produces,MOMMY,*anya,25,0.98
+2023-04-18,Hungarian,produces,MOMMY,*anya,26,0.96
+2023-04-18,Hungarian,produces,MOMMY,*anya,27,0.92
+2023-04-18,Hungarian,produces,MOMMY,*anya,28,0.97
+2023-04-18,Hungarian,produces,MOMMY,*anya,29,0.92
+2023-04-18,Hungarian,produces,MOMMY,*anya,30,0.94
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,16,0.85
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,17,0.8
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,18,0.89
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,19,0.93
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,20,0.87
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,21,0.95
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,22,0.93
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,23,0.94
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,24,0.91
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,25,0.93
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,26,0.98
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,27,0.98
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,28,0.98
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,29,0.95
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,30,0.94
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,31,1
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,32,1
+2023-04-18,Spanish (Argentinian),produces,MOMMY,mamá_mami,33,1
+2023-04-18,Persian,produces,MOMMY,مامان,8,0.29
+2023-04-18,Persian,produces,MOMMY,مامان,9,0.38
+2023-04-18,Persian,produces,MOMMY,مامان,10,0.25
+2023-04-18,Persian,produces,MOMMY,مامان,11,0.31
+2023-04-18,Persian,produces,MOMMY,مامان,12,0.09
+2023-04-18,Persian,produces,MOMMY,مامان,13,0.5
+2023-04-18,Persian,produces,MOMMY,مامان,14,0.53
+2023-04-18,Persian,produces,MOMMY,مامان,15,0.58
+2023-04-18,Persian,produces,MOMMY,مامان,16,0.5
+2023-04-18,Persian,produces,MOMMY,مامان*,17,0
+2023-04-18,Persian,produces,MOMMY,مامان*,18,0
+2023-04-18,Persian,produces,MOMMY,مامان*,20,0.67
+2023-04-18,Persian,produces,MOMMY,مامان*,21,0
+2023-04-18,Persian,produces,MOMMY,مامان*,22,0
+2023-04-18,Persian,produces,MOMMY,مامان*,23,1
+2023-04-18,Persian,produces,MOMMY,مامان*,24,0.5
+2023-04-18,Persian,produces,MOMMY,مامان*,25,0.33
+2023-04-18,Persian,produces,MOMMY,مامان*,26,0.33
+2023-04-18,Persian,produces,MOMMY,مامان*,27,0.6
+2023-04-18,Persian,produces,MOMMY,مامان*,28,0.44
+2023-04-18,Persian,produces,MOMMY,مامان*,29,1
+2023-04-18,Persian,produces,MOMMY,مامان*,30,0.5

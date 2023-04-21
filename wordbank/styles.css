@@ -1,0 +1,122 @@
+slides > slide {
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+.title-slide hgroup h1 {
+  font-size: 48px;
+  letter-spacing: -1px;
+  text-align: center;
+  padding-right: 120px;
+}
+
+.title-slide hgroup p {
+  font-size: 24px;
+  text-align: center;
+  padding-right: 120px;
+}
+
+.centered {
+  font-size: 24px;
+}
+
+hgroup h2 {
+    margin-top: -20px;
+}
+
+slides > slide > hgroup + article {
+    margin-top: 10px;
+}
+
+
+.small {
+  font-size: 80%;
+}
+
+#mini-project p {
+  font-size: 75% ;
+}
+
+#mini-project li {
+  font-size: 90% ;
+}
+
+/*
+ul {
+	position: relative;
+	list-style: none;
+}
+ul li:before {
+	content: "–";
+	position: absolute;
+	left: 0;
+	font-weight: 650;
+}
+*/
+
+.headshot {
+  height: 10px;
+}
+
+.logo {
+  width: 18%; /* to set the width of the image to 50% of its container */
+}
+
+.llogo {
+  width: 24%; /* to set the width of the image to 50% of its container */
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  float: left;
+}
+
+.rlogo {
+  width: 12%; /* to set the width of the image to 50% of its container */
+  display: block;
+  margin: 0 20;
+  padding: 0;
+  float: right;
+}
+
+
+
+figcaption {
+  font-size: 80%;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.text-center {
+  text-align: center;
+}
+
+.pagedtable-footer {
+  font-size: 50%;
+}
+
+.prettyprint {
+  width: 108%;
+}
+
+a {
+  border-bottom: none;
+}
+
+p {
+  margin-bottom: none;
+}
+
+img {
+  max-width: 100%;
+}
