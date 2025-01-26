@@ -5,6 +5,48 @@
     <script src="jspsych/jspsych.js"></script>
     <script src="jspsych/plugin-html-button-response.js"></script>
     <link href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+
+    <!-- Preload images -->
+    <link rel="preload" as="image" href="images/dog.png">
+    <link rel="preload" as="image" href="images/sock.png">
+    <link rel="preload" as="image" href="images/spoon.png">
+    <link rel="preload" as="image" href="images/cheese.png">
+    <link rel="preload" as="image" href="images/head.png">
+    <link rel="preload" as="image" href="images/ball.png">
+    <link rel="preload" as="image" href="images/close.png">
+    <link rel="preload" as="image" href="images/wearhat.png">
+    <link rel="preload" as="image" href="images/cat.png">
+    <link rel="preload" as="image" href="images/rice.png">
+    <link rel="preload" as="image" href="images/hand.png">
+    <link rel="preload" as="image" href="images/bread.png">
+    <link rel="preload" as="image" href="images/clap.png">
+    <link rel="preload" as="image" href="images/liedown.png">
+    <link rel="preload" as="image" href="images/milk.png">
+    <link rel="preload" as="image" href="images/foot.png">
+    <link rel="preload" as="image" href="images/car.png">
+    <link rel="preload" as="image" href="images/shoe.png">
+    <link rel="preload" as="image" href="images/sleep.png">
+    <link rel="preload" as="image" href="images/sit.png">
+    <link rel="preload" as="image" href="images/pillow.png">
+    <link rel="preload" as="image" href="images/diaper.png">
+    <link rel="preload" as="image" href="images/mouth.png">
+    <link rel="preload" as="image" href="images/book.png">
+    <link rel="preload" as="image" href="images/hug.png">
+    <link rel="preload" as="image" href="images/wear.png">
+    <link rel="preload" as="image" href="images/hat.png">
+    <link rel="preload" as="image" href="images/pencil.png">
+    <link rel="preload" as="image" href="images/nose.png">
+    <link rel="preload" as="image" href="images/door.png">
+    <link rel="preload" as="image" href="images/comb.png">
+    <link rel="preload" as="image" href="images/strawberry.png">
+    <link rel="preload" as="image" href="images/water.png">
+    <link rel="preload" as="image" href="images/flower.png">
+    <link rel="preload" as="image" href="images/eye.png">
+    <link rel="preload" as="image" href="images/toothbrush.png">
+    <link rel="preload" as="image" href="images/stand.png">
+    <link rel="preload" as="image" href="images/eat.png">
+    <link rel="preload" as="image" href="images/pants.png">
+    <link rel="preload" as="image" href="images/cup.png">
   </head>
   <body>
     <button id="start-button" style="
@@ -35,11 +77,19 @@
             type: jsPsychHtmlButtonResponse,
             stimulus: `
               <div style="display: flex; justify-content: space-between; gap: 20%;">
-                <div style="width: 95%;">
-                  <img src="${stimulus.left_image}" style="width: 100%; height: 600px; object-fit: contain; cursor: pointer;" onclick="jsPsych.finishTrial({ response: 0 })">
+                <div style="width: 95%; height: 600px; overflow: hidden; position: relative;">
+                  <img 
+                    src="${stimulus.left_image}" 
+                    style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+                    onclick="jsPsych.finishTrial({ response: 0 })"
+                  />
                 </div>
-                <div style="width: 95%;">
-                  <img src="${stimulus.right_image}" style="width: 100%; height: 600px; object-fit: contain; cursor: pointer;" onclick="jsPsych.finishTrial({ response: 1 })">
+                <div style="width: 95%; height: 600px; overflow: hidden; position: relative;">
+                  <img 
+                    src="${stimulus.right_image}" 
+                    style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+                    onclick="jsPsych.finishTrial({ response: 1 })"
+                  />
                 </div>
               </div>
               <audio id="audio_${stimulus.trial_id}" autoplay>
