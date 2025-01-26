@@ -48,47 +48,30 @@
     <link rel="preload" as="image" href="images/pants.png">
     <link rel="preload" as="image" href="images/cup.png">
 
-    <!-- Preload audio -->
-    <link rel="preload" as="audio" href="audio/dog.wav">
-    <link rel="preload" as="audio" href="audio/spoon.wav">
-    <link rel="preload" as="audio" href="audio/ball.wav">
-    <link rel="preload" as="audio" href="audio/close.wav">
-    <link rel="preload" as="audio" href="audio/cat.wav">
-    <link rel="preload" as="audio" href="audio/hand.wav">
-    <link rel="preload" as="audio" href="audio/liedown.wav">
-    <link rel="preload" as="audio" href="audio/milk.wav">
-    <link rel="preload" as="audio" href="audio/car.wav">
-    <link rel="preload" as="audio" href="audio/sit.wav">
-    <link rel="preload" as="audio" href="audio/diaper.wav">
-    <link rel="preload" as="audio" href="audio/book.wav">
-    <link rel="preload" as="audio" href="audio/wear.wav">
-    <link rel="preload" as="audio" href="audio/hat.wav">
-    <link rel="preload" as="audio" href="audio/door.wav">
-    <link rel="preload" as="audio" href="audio/comb.wav">
-    <link rel="preload" as="audio" href="audio/water.wav">
-    <link rel="preload" as="audio" href="audio/toothbrush.wav">
-    <link rel="preload" as="audio" href="audio/stand.wav">
-    <link rel="preload" as="audio" href="audio/pants.wav">
-    <link rel="preload" as="audio" href="audio/clap.wav">
-    <link rel="preload" as="audio" href="audio/bread.wav">
-    <link rel="preload" as="audio" href="audio/cheese.wav">
-    <link rel="preload" as="audio" href="audio/pillow.wav">
-    <link rel="preload" as="audio" href="audio/rice.wav">
-    <link rel="preload" as="audio" href="audio/strawberry.wav">
-    <link rel="preload" as="audio" href="audio/wearhat.wav">
-    <link rel="preload" as="audio" href="audio/nose.wav">
-    <link rel="preload" as="audio" href="audio/sock.wav">
-    <link rel="preload" as="audio" href="audio/hug.wav">
-    <link rel="preload" as="audio" href="audio/mouth.wav">
-    <link rel="preload" as="audio" href="audio/shoe.wav">
-    <link rel="preload" as="audio" href="audio/sleep.wav">
-    <link rel="preload" as="audio" href="audio/flower.wav">
-    <link rel="preload" as="audio" href="audio/head.wav">
-    <link rel="preload" as="audio" href="audio/eye.wav">
-    <link rel="preload" as="audio" href="audio/eat.wav">
-    <link rel="preload" as="audio" href="audio/foot.wav">
-    <link rel="preload" as="audio" href="audio/pencil.wav">
-    <link rel="preload" as="audio" href="audio/cup.wav">
+    <script>
+      let audioBuffers = {};
+
+      function preloadAudioFiles(audioFiles) {
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const promises = audioFiles.map((file) => {
+          return fetch(file)
+            .then((response) => response.arrayBuffer())
+            .then((data) => audioContext.decodeAudioData(data))
+            .then((buffer) => {
+              audioBuffers[file] = buffer;
+            });
+        });
+        return Promise.all(promises);
+      }
+
+      function playAudio(file) {
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const source = audioContext.createBufferSource();
+        source.buffer = audioBuffers[file];
+        source.connect(audioContext.destination);
+        source.start();
+      }
+    </script>
   </head>
   <body>
     <button id="start-button" style="
@@ -112,66 +95,75 @@
     document.getElementById('start-button').addEventListener('click', () => {
       document.getElementById('start-button').style.display = 'none';
 
-      fetch('stimuli.json')
-        .then((response) => response.json())
-        .then((stimuliData) => {
-          const trials = stimuliData.map((stimulus) => ({
-            type: jsPsychHtmlButtonResponse,
-            stimulus: `
-              <div style="display: flex; justify-content: space-between; gap: 20%;">
-                <div style="width: 95%; height: 600px; overflow: hidden; position: relative;">
-                  <img 
-                    src="${stimulus.left_image}" 
-                    style="width: 100%; height: 100%; object-fit: contain; display: block;" 
-                    onclick="jsPsych.finishTrial({ response: 0 })"
-                  />
-                </div>
-                <div style="width: 95%; height: 600px; overflow: hidden; position: relative;">
-                  <img 
-                    src="${stimulus.right_image}" 
-                    style="width: 100%; height: 100%; object-fit: contain; display: block;" 
-                    onclick="jsPsych.finishTrial({ response: 1 })"
-                  />
-                </div>
-              </div>
-              <audio id="audio_${stimulus.trial_id}" autoplay>
-                <source src="${stimulus.audio_file}" type="audio/wav">
-              </audio>`,
-            choices: [],
-            on_load: () => {
-              const audioElement = document.getElementById(`audio_${stimulus.trial_id}`);
-              if (audioElement) {
-                audioElement.play().catch((error) => console.error('Audio playback error:', error));
-              }
-            },
-            on_finish: (data) => {
-              const isCorrect =
-                (data.response === 0 && stimulus.correct_answer === 'L') ||
-                (data.response === 1 && stimulus.correct_answer === 'R');
-              jsPsych.data.addDataToLastTrial({
-                trial_id: stimulus.trial_id,
-                word: stimulus.word,
-                selected_position: data.response === 0 ? 'L' : 'R',
-                is_correct: isCorrect,
-                response_time: data.rt,
-              });
-            },
-          }));
+      const audioFiles = [
+        "audio/dog.wav", "audio/spoon.wav", "audio/ball.wav", "audio/close.wav", "audio/cat.wav",
+        "audio/hand.wav", "audio/liedown.wav", "audio/milk.wav", "audio/car.wav", "audio/sit.wav",
+        "audio/diaper.wav", "audio/book.wav", "audio/wear.wav", "audio/hat.wav", "audio/door.wav",
+        "audio/comb.wav", "audio/water.wav", "audio/toothbrush.wav", "audio/stand.wav", "audio/pants.wav",
+        "audio/clap.wav", "audio/bread.wav", "audio/cheese.wav", "audio/pillow.wav", "audio/rice.wav",
+        "audio/strawberry.wav", "audio/wearhat.wav", "audio/nose.wav", "audio/sock.wav", "audio/hug.wav",
+        "audio/mouth.wav", "audio/shoe.wav", "audio/sleep.wav", "audio/flower.wav", "audio/head.wav",
+        "audio/eye.wav", "audio/eat.wav", "audio/foot.wav", "audio/pencil.wav", "audio/cup.wav"
+      ];
 
-          const finalScreen = {
-            type: jsPsychHtmlButtonResponse,
-            stimulus: '<p>Thank you for completing the task!</p>',
-            choices: ['Finish'],
-            on_finish: () => {
-              const results = jsPsych.data.get().json();
-              console.log('Results:', results);
-              // Send results to a server or save locally if needed
-            },
-          };
+      preloadAudioFiles(audioFiles)
+        .then(() => {
+          fetch('stimuli.json')
+            .then((response) => response.json())
+            .then((stimuliData) => {
+              const trials = stimuliData.map((stimulus) => ({
+                type: jsPsychHtmlButtonResponse,
+                stimulus: `
+                  <div style="display: flex; justify-content: space-between; gap: 20%;">
+                    <div style="width: 95%; height: 600px; overflow: hidden; position: relative;">
+                      <img 
+                        src="${stimulus.left_image}" 
+                        style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+                        onclick="jsPsych.finishTrial({ response: 0 })"
+                      />
+                    </div>
+                    <div style="width: 95%; height: 600px; overflow: hidden; position: relative;">
+                      <img 
+                        src="${stimulus.right_image}" 
+                        style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+                        onclick="jsPsych.finishTrial({ response: 1 })"
+                      />
+                    </div>
+                  </div>
+                `,
+                on_load: () => {
+                  playAudio(stimulus.audio_file); // Use preloaded audio buffer
+                },
+                on_finish: (data) => {
+                  const isCorrect =
+                    (data.response === 0 && stimulus.correct_answer === 'L') ||
+                    (data.response === 1 && stimulus.correct_answer === 'R');
+                  jsPsych.data.addDataToLastTrial({
+                    trial_id: stimulus.trial_id,
+                    word: stimulus.word,
+                    selected_position: data.response === 0 ? 'L' : 'R',
+                    is_correct: isCorrect,
+                    response_time: data.rt,
+                  });
+                },
+              }));
 
-          jsPsych.run([...trials, finalScreen]);
+              const finalScreen = {
+                type: jsPsychHtmlButtonResponse,
+                stimulus: '<p>Thank you for completing the task!</p>',
+                choices: ['Finish'],
+                on_finish: () => {
+                  const results = jsPsych.data.get().json();
+                  console.log('Results:', results);
+                  // Send results to a server or save locally if needed
+                },
+              };
+
+              jsPsych.run([...trials, finalScreen]);
+            })
+            .catch((error) => console.error('Error loading stimuli data:', error));
         })
-        .catch((error) => console.error('Error loading stimuli data:', error));
+        .catch((error) => console.error('Error preloading audio files:', error));
     });
   </script>
 </html>
