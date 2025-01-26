@@ -5,7 +5,8 @@
         "correct_answer": "L",
         "left_image": "images/dog.png",
         "right_image": "images/sock.png",
-        "audio_file": "audio/dog.wav"
+        "audio_file": "audio/dog.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t102",
@@ -13,7 +14,8 @@
         "correct_answer": "L",
         "left_image": "images/spoon.png",
         "right_image": "images/cheese.png",
-        "audio_file": "audio/spoon.wav"
+        "audio_file": "audio/spoon.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t103",
@@ -21,15 +23,17 @@
         "correct_answer": "R",
         "left_image": "images/head.png",
         "right_image": "images/ball.png",
-        "audio_file": "audio/ball.wav"
+        "audio_file": "audio/ball.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t104",
-        "word": "close",
+        "word": "closes",
         "correct_answer": "L",
         "left_image": "images/close.png",
         "right_image": "images/wearhat.png",
-        "audio_file": "audio/close.wav"
+        "audio_file": "audio/close.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t151",
@@ -37,7 +41,8 @@
         "correct_answer": "L",
         "left_image": "images/cat.png",
         "right_image": "images/rice.png",
-        "audio_file": "audio/cat.wav"
+        "audio_file": "audio/cat.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t152",
@@ -45,15 +50,17 @@
         "correct_answer": "L",
         "left_image": "images/hand.png",
         "right_image": "images/bread.png",
-        "audio_file": "audio/hand.wav"
+        "audio_file": "audio/hand.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t153",
-        "word": "liedown",
+        "word": "lies down",
         "correct_answer": "R",
         "left_image": "images/clap.png",
         "right_image": "images/liedown.png",
-        "audio_file": "audio/liedown.wav"
+        "audio_file": "audio/liedown.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t154",
@@ -61,7 +68,8 @@
         "correct_answer": "L",
         "left_image": "images/milk.png",
         "right_image": "images/foot.png",
-        "audio_file": "audio/milk.wav"
+        "audio_file": "audio/milk.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t201",
@@ -69,15 +77,17 @@
         "correct_answer": "L",
         "left_image": "images/car.png",
         "right_image": "images/shoe.png",
-        "audio_file": "audio/car.wav"
+        "audio_file": "audio/car.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t202",
-        "word": "sit",
+        "word": "sits",
         "correct_answer": "R",
         "left_image": "images/sleep.png",
         "right_image": "images/sit.png",
-        "audio_file": "audio/sit.wav"
+        "audio_file": "audio/sit.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t203",
@@ -85,7 +95,8 @@
         "correct_answer": "R",
         "left_image": "images/pillow.png",
         "right_image": "images/diaper.png",
-        "audio_file": "audio/diaper.wav"
+        "audio_file": "audio/diaper.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t204",
@@ -93,15 +104,17 @@
         "correct_answer": "R",
         "left_image": "images/mouth.png",
         "right_image": "images/book.png",
-        "audio_file": "audio/book.wav"
+        "audio_file": "audio/book.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t251",
-        "word": "wear",
+        "word": "wears",
         "correct_answer": "R",
         "left_image": "images/hug.png",
         "right_image": "images/wear.png",
-        "audio_file": "audio/wear.wav"
+        "audio_file": "audio/wear.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t252",
@@ -109,7 +122,8 @@
         "correct_answer": "L",
         "left_image": "images/hat.png",
         "right_image": "images/pencil.png",
-        "audio_file": "audio/hat.wav"
+        "audio_file": "audio/hat.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t253",
@@ -117,7 +131,8 @@
         "correct_answer": "R",
         "left_image": "images/nose.png",
         "right_image": "images/door.png",
-        "audio_file": "audio/door.wav"
+        "audio_file": "audio/door.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t254",
@@ -125,7 +140,8 @@
         "correct_answer": "L",
         "left_image": "images/comb.png",
         "right_image": "images/strawberry.png",
-        "audio_file": "audio/comb.wav"
+        "audio_file": "audio/comb.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t301",
@@ -133,7 +149,8 @@
         "correct_answer": "L",
         "left_image": "images/water.png",
         "right_image": "images/flower.png",
-        "audio_file": "audio/water.wav"
+        "audio_file": "audio/water.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t302",
@@ -141,15 +158,17 @@
         "correct_answer": "R",
         "left_image": "images/eye.png",
         "right_image": "images/toothbrush.png",
-        "audio_file": "audio/toothbrush.wav"
+        "audio_file": "audio/toothbrush.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t303",
-        "word": "stand",
+        "word": "stands",
         "correct_answer": "L",
         "left_image": "images/stand.png",
         "right_image": "images/eat.png",
-        "audio_file": "audio/stand.wav"
+        "audio_file": "audio/stand.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t304",
@@ -157,15 +176,17 @@
         "correct_answer": "L",
         "left_image": "images/pants.png",
         "right_image": "images/cup.png",
-        "audio_file": "audio/pants.wav"
+        "audio_file": "audio/pants.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t351",
-        "word": "clap",
+        "word": "claps",
         "correct_answer": "L",
         "left_image": "images/clap.png",
         "right_image": "images/liedown.png",
-        "audio_file": "audio/clap.wav"
+        "audio_file": "audio/clap.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t352",
@@ -173,7 +194,8 @@
         "correct_answer": "R",
         "left_image": "images/hand.png",
         "right_image": "images/bread.png",
-        "audio_file": "audio/bread.wav"
+        "audio_file": "audio/bread.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t353",
@@ -181,7 +203,8 @@
         "correct_answer": "R",
         "left_image": "images/spoon.png",
         "right_image": "images/cheese.png",
-        "audio_file": "audio/cheese.wav"
+        "audio_file": "audio/cheese.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t354",
@@ -189,7 +212,8 @@
         "correct_answer": "L",
         "left_image": "images/pillow.png",
         "right_image": "images/diaper.png",
-        "audio_file": "audio/pillow.wav"
+        "audio_file": "audio/pillow.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t401",
@@ -197,7 +221,8 @@
         "correct_answer": "R",
         "left_image": "images/cat.png",
         "right_image": "images/rice.png",
-        "audio_file": "audio/rice.wav"
+        "audio_file": "audio/rice.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t402",
@@ -205,15 +230,17 @@
         "correct_answer": "R",
         "left_image": "images/comb.png",
         "right_image": "images/strawberry.png",
-        "audio_file": "audio/strawberry.wav"
+        "audio_file": "audio/strawberry.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t403",
-        "word": "wearhat",
+        "word": "puts on",
         "correct_answer": "R",
         "left_image": "images/close.png",
         "right_image": "images/wearhat.png",
-        "audio_file": "audio/wearhat.wav"
+        "audio_file": "audio/wearhat.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t404",
@@ -221,7 +248,8 @@
         "correct_answer": "L",
         "left_image": "images/nose.png",
         "right_image": "images/door.png",
-        "audio_file": "audio/nose.wav"
+        "audio_file": "audio/nose.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t451",
@@ -229,15 +257,17 @@
         "correct_answer": "R",
         "left_image": "images/dog.png",
         "right_image": "images/sock.png",
-        "audio_file": "audio/sock.wav"
+        "audio_file": "audio/sock.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t452",
-        "word": "hug",
+        "word": "hugs",
         "correct_answer": "L",
         "left_image": "images/hug.png",
         "right_image": "images/wear.png",
-        "audio_file": "audio/hug.wav"
+        "audio_file": "audio/hug.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t453",
@@ -245,7 +275,8 @@
         "correct_answer": "L",
         "left_image": "images/mouth.png",
         "right_image": "images/book.png",
-        "audio_file": "audio/mouth.wav"
+        "audio_file": "audio/mouth.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t454",
@@ -253,15 +284,17 @@
         "correct_answer": "R",
         "left_image": "images/car.png",
         "right_image": "images/shoe.png",
-        "audio_file": "audio/shoe.wav"
+        "audio_file": "audio/shoe.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t501",
-        "word": "sleep",
+        "word": "sleeps",
         "correct_answer": "L",
         "left_image": "images/sleep.png",
         "right_image": "images/sit.png",
-        "audio_file": "audio/sleep.wav"
+        "audio_file": "audio/sleep.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t502",
@@ -269,7 +302,8 @@
         "correct_answer": "R",
         "left_image": "images/water.png",
         "right_image": "images/flower.png",
-        "audio_file": "audio/flower.wav"
+        "audio_file": "audio/flower.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t503",
@@ -277,7 +311,8 @@
         "correct_answer": "L",
         "left_image": "images/head.png",
         "right_image": "images/ball.png",
-        "audio_file": "audio/head.wav"
+        "audio_file": "audio/head.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t504",
@@ -285,15 +320,17 @@
         "correct_answer": "L",
         "left_image": "images/eye.png",
         "right_image": "images/toothbrush.png",
-        "audio_file": "audio/eye.wav"
+        "audio_file": "audio/eye.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t551",
-        "word": "eat",
+        "word": "eats",
         "correct_answer": "R",
         "left_image": "images/stand.png",
         "right_image": "images/eat.png",
-        "audio_file": "audio/eat.wav"
+        "audio_file": "audio/eat.wav",
+        "verb": "yes"
     },
     {
         "trial_id": "t552",
@@ -301,7 +338,8 @@
         "correct_answer": "R",
         "left_image": "images/milk.png",
         "right_image": "images/foot.png",
-        "audio_file": "audio/foot.wav"
+        "audio_file": "audio/foot.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t553",
@@ -309,7 +347,8 @@
         "correct_answer": "R",
         "left_image": "images/hat.png",
         "right_image": "images/pencil.png",
-        "audio_file": "audio/pencil.wav"
+        "audio_file": "audio/pencil.wav",
+        "verb": "no"
     },
     {
         "trial_id": "t554",
@@ -317,6 +356,7 @@
         "correct_answer": "R",
         "left_image": "images/pants.png",
         "right_image": "images/cup.png",
-        "audio_file": "audio/cup.wav"
+        "audio_file": "audio/cup.wav",
+        "verb": "no"
     }
 ]
