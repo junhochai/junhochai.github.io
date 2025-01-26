@@ -1,0 +1,322 @@
+[
+    {
+        "trial_id": "t101",
+        "word": "dog",
+        "correct_answer": "L",
+        "left_image": "images/dog.png",
+        "right_image": "images/sock.png",
+        "audio_file": "audio/dog.wav"
+    },
+    {
+        "trial_id": "t102",
+        "word": "spoon",
+        "correct_answer": "L",
+        "left_image": "images/spoon.png",
+        "right_image": "images/cheese.png",
+        "audio_file": "audio/spoon.wav"
+    },
+    {
+        "trial_id": "t103",
+        "word": "ball",
+        "correct_answer": "R",
+        "left_image": "images/head.png",
+        "right_image": "images/ball.png",
+        "audio_file": "audio/ball.wav"
+    },
+    {
+        "trial_id": "t104",
+        "word": "close",
+        "correct_answer": "L",
+        "left_image": "images/close.png",
+        "right_image": "images/wearhat.png",
+        "audio_file": "audio/close.wav"
+    },
+    {
+        "trial_id": "t151",
+        "word": "cat",
+        "correct_answer": "L",
+        "left_image": "images/cat.png",
+        "right_image": "images/rice.png",
+        "audio_file": "audio/cat.wav"
+    },
+    {
+        "trial_id": "t152",
+        "word": "hand",
+        "correct_answer": "L",
+        "left_image": "images/hand.png",
+        "right_image": "images/bread.png",
+        "audio_file": "audio/hand.wav"
+    },
+    {
+        "trial_id": "t153",
+        "word": "liedown",
+        "correct_answer": "R",
+        "left_image": "images/clap.png",
+        "right_image": "images/liedown.png",
+        "audio_file": "audio/liedown.wav"
+    },
+    {
+        "trial_id": "t154",
+        "word": "milk",
+        "correct_answer": "L",
+        "left_image": "images/milk.png",
+        "right_image": "images/foot.png",
+        "audio_file": "audio/milk.wav"
+    },
+    {
+        "trial_id": "t201",
+        "word": "car",
+        "correct_answer": "L",
+        "left_image": "images/car.png",
+        "right_image": "images/shoe.png",
+        "audio_file": "audio/car.wav"
+    },
+    {
+        "trial_id": "t202",
+        "word": "sit",
+        "correct_answer": "R",
+        "left_image": "images/sleep.png",
+        "right_image": "images/sit.png",
+        "audio_file": "audio/sit.wav"
+    },
+    {
+        "trial_id": "t203",
+        "word": "diaper",
+        "correct_answer": "R",
+        "left_image": "images/pillow.png",
+        "right_image": "images/diaper.png",
+        "audio_file": "audio/diaper.wav"
+    },
+    {
+        "trial_id": "t204",
+        "word": "book",
+        "correct_answer": "R",
+        "left_image": "images/mouth.png",
+        "right_image": "images/book.png",
+        "audio_file": "audio/book.wav"
+    },
+    {
+        "trial_id": "t251",
+        "word": "wear",
+        "correct_answer": "R",
+        "left_image": "images/hug.png",
+        "right_image": "images/wear.png",
+        "audio_file": "audio/wear.wav"
+    },
+    {
+        "trial_id": "t252",
+        "word": "hat",
+        "correct_answer": "L",
+        "left_image": "images/hat.png",
+        "right_image": "images/pencil.png",
+        "audio_file": "audio/hat.wav"
+    },
+    {
+        "trial_id": "t253",
+        "word": "door",
+        "correct_answer": "R",
+        "left_image": "images/nose.png",
+        "right_image": "images/door.png",
+        "audio_file": "audio/door.wav"
+    },
+    {
+        "trial_id": "t254",
+        "word": "comb",
+        "correct_answer": "L",
+        "left_image": "images/comb.png",
+        "right_image": "images/strawberry.png",
+        "audio_file": "audio/comb.wav"
+    },
+    {
+        "trial_id": "t301",
+        "word": "water",
+        "correct_answer": "L",
+        "left_image": "images/water.png",
+        "right_image": "images/flower.png",
+        "audio_file": "audio/water.wav"
+    },
+    {
+        "trial_id": "t302",
+        "word": "toothbrush",
+        "correct_answer": "R",
+        "left_image": "images/eye.png",
+        "right_image": "images/toothbrush.png",
+        "audio_file": "audio/toothbrush.wav"
+    },
+    {
+        "trial_id": "t303",
+        "word": "stand",
+        "correct_answer": "L",
+        "left_image": "images/stand.png",
+        "right_image": "images/eat.png",
+        "audio_file": "audio/stand.wav"
+    },
+    {
+        "trial_id": "t304",
+        "word": "pants",
+        "correct_answer": "L",
+        "left_image": "images/pants.png",
+        "right_image": "images/cup.png",
+        "audio_file": "audio/pants.wav"
+    },
+    {
+        "trial_id": "t351",
+        "word": "clap",
+        "correct_answer": "L",
+        "left_image": "images/clap.png",
+        "right_image": "images/liedown.png",
+        "audio_file": "audio/clap.wav"
+    },
+    {
+        "trial_id": "t352",
+        "word": "bread",
+        "correct_answer": "R",
+        "left_image": "images/hand.png",
+        "right_image": "images/bread.png",
+        "audio_file": "audio/bread.wav"
+    },
+    {
+        "trial_id": "t353",
+        "word": "cheese",
+        "correct_answer": "R",
+        "left_image": "images/spoon.png",
+        "right_image": "images/cheese.png",
+        "audio_file": "audio/cheese.wav"
+    },
+    {
+        "trial_id": "t354",
+        "word": "pillow",
+        "correct_answer": "L",
+        "left_image": "images/pillow.png",
+        "right_image": "images/diaper.png",
+        "audio_file": "audio/pillow.wav"
+    },
+    {
+        "trial_id": "t401",
+        "word": "rice",
+        "correct_answer": "R",
+        "left_image": "images/cat.png",
+        "right_image": "images/rice.png",
+        "audio_file": "audio/rice.wav"
+    },
+    {
+        "trial_id": "t402",
+        "word": "strawberry",
+        "correct_answer": "R",
+        "left_image": "images/comb.png",
+        "right_image": "images/strawberry.png",
+        "audio_file": "audio/strawberry.wav"
+    },
+    {
+        "trial_id": "t403",
+        "word": "wearhat",
+        "correct_answer": "R",
+        "left_image": "images/close.png",
+        "right_image": "images/wearhat.png",
+        "audio_file": "audio/wearhat.wav"
+    },
+    {
+        "trial_id": "t404",
+        "word": "nose",
+        "correct_answer": "L",
+        "left_image": "images/nose.png",
+        "right_image": "images/door.png",
+        "audio_file": "audio/nose.wav"
+    },
+    {
+        "trial_id": "t451",
+        "word": "sock",
+        "correct_answer": "R",
+        "left_image": "images/dog.png",
+        "right_image": "images/sock.png",
+        "audio_file": "audio/sock.wav"
+    },
+    {
+        "trial_id": "t452",
+        "word": "hug",
+        "correct_answer": "L",
+        "left_image": "images/hug.png",
+        "right_image": "images/wear.png",
+        "audio_file": "audio/hug.wav"
+    },
+    {
+        "trial_id": "t453",
+        "word": "mouth",
+        "correct_answer": "L",
+        "left_image": "images/mouth.png",
+        "right_image": "images/book.png",
+        "audio_file": "audio/mouth.wav"
+    },
+    {
+        "trial_id": "t454",
+        "word": "shoe",
+        "correct_answer": "R",
+        "left_image": "images/car.png",
+        "right_image": "images/shoe.png",
+        "audio_file": "audio/shoe.wav"
+    },
+    {
+        "trial_id": "t501",
+        "word": "sleep",
+        "correct_answer": "L",
+        "left_image": "images/sleep.png",
+        "right_image": "images/sit.png",
+        "audio_file": "audio/sleep.wav"
+    },
+    {
+        "trial_id": "t502",
+        "word": "flower",
+        "correct_answer": "R",
+        "left_image": "images/water.png",
+        "right_image": "images/flower.png",
+        "audio_file": "audio/flower.wav"
+    },
+    {
+        "trial_id": "t503",
+        "word": "head",
+        "correct_answer": "L",
+        "left_image": "images/head.png",
+        "right_image": "images/ball.png",
+        "audio_file": "audio/head.wav"
+    },
+    {
+        "trial_id": "t504",
+        "word": "eye",
+        "correct_answer": "L",
+        "left_image": "images/eye.png",
+        "right_image": "images/toothbrush.png",
+        "audio_file": "audio/eye.wav"
+    },
+    {
+        "trial_id": "t551",
+        "word": "eat",
+        "correct_answer": "R",
+        "left_image": "images/stand.png",
+        "right_image": "images/eat.png",
+        "audio_file": "audio/eat.wav"
+    },
+    {
+        "trial_id": "t552",
+        "word": "foot",
+        "correct_answer": "R",
+        "left_image": "images/milk.png",
+        "right_image": "images/foot.png",
+        "audio_file": "audio/foot.wav"
+    },
+    {
+        "trial_id": "t553",
+        "word": "pencil",
+        "correct_answer": "R",
+        "left_image": "images/hat.png",
+        "right_image": "images/pencil.png",
+        "audio_file": "audio/pencil.wav"
+    },
+    {
+        "trial_id": "t554",
+        "word": "cup",
+        "correct_answer": "R",
+        "left_image": "images/pants.png",
+        "right_image": "images/cup.png",
+        "audio_file": "audio/cup.wav"
+    }
+]

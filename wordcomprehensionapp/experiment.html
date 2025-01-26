@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word comprehension task</title>
+    <script src="jspsych/jspsych.js"></script>
+    <script src="jspsych/plugin-html-button-response.js"></script>
+    <link href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <button id="start-button" style="
+      font-size: 24px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #ff7f50, #87cefa);
+      color: white;
+      border: none;
+      padding: 20px 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    ">Start Experiment</button>
+  </body>
+  <script>
+    const jsPsych = initJsPsych();
+
+    document.getElementById('start-button').addEventListener('click', () => {
+      document.getElementById('start-button').style.display = 'none';
+
+      fetch('stimuli.json')
+        .then((response) => response.json())
+        .then((stimuliData) => {
+          const trials = stimuliData.map((stimulus) => ({
+            type: jsPsychHtmlButtonResponse,
+            stimulus: `
+              <div style="display: flex; justify-content: space-between; gap: 20%;">
+                <div style="width: 95%;">
+                  <img src="${stimulus.left_image}" style="width: 100%; height: 600px; object-fit: contain; cursor: pointer;" onclick="jsPsych.finishTrial({ response: 0 })">
+                </div>
+                <div style="width: 95%;">
+                  <img src="${stimulus.right_image}" style="width: 100%; height: 600px; object-fit: contain; cursor: pointer;" onclick="jsPsych.finishTrial({ response: 1 })">
+                </div>
+              </div>
+              <audio id="audio_${stimulus.trial_id}" autoplay>
+                <source src="${stimulus.audio_file}" type="audio/wav">
+              </audio>`,
+            choices: [],
+            on_load: () => {
+              const audioElement = document.getElementById(`audio_${stimulus.trial_id}`);
+              if (audioElement) {
+                audioElement.play().catch((error) => console.error('Audio playback error:', error));
+              }
+            },
+            on_finish: (data) => {
+              const isCorrect =
+                (data.response === 0 && stimulus.correct_answer === 'L') ||
+                (data.response === 1 && stimulus.correct_answer === 'R');
+              jsPsych.data.addDataToLastTrial({
+                trial_id: stimulus.trial_id,
+                word: stimulus.word,
+                selected_position: data.response === 0 ? 'L' : 'R',
+                is_correct: isCorrect,
+                response_time: data.rt,
+              });
+            },
+          }));
+
+          const finalScreen = {
+            type: jsPsychHtmlButtonResponse,
+            stimulus: '<p>Thank you for completing the task!</p>',
+            choices: ['Finish'],
+            on_finish: () => {
+              const results = jsPsych.data.get().json();
+              console.log('Results:', results);
+              // Send results to a server or save locally if needed
+            },
+          };
+
+          jsPsych.run([...trials, finalScreen]);
+        })
+        .catch((error) => console.error('Error loading stimuli data:', error));
+    });
+  </script>
+</html>
