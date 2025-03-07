@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Comprehension Task</title>
+    <script src="jspsych/jspsych.js"></script>
+    <script src="jspsych/plugin-html-button-response.js"></script>
+    <link href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="initialization-form" style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    ">
+      <h2>Welcome to the Word Comprehension Task</h2>
+      <div style="margin: 20px 0;">
+        <label for="age">Child's Age (in years): </label>
+        <input type="number" id="age" min="2" max="12" required>
+      </div>
+      <div style="margin: 20px 0;">
+        <label for="gender">Child's Gender: </label>
+        <select id="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          <option value="prefer_not_to_say">Prefer not to say</option>
+        </select>
+      </div>
+      <button id="continue-button" style="
+        font-size: 20px;
+        background: linear-gradient(to right, #ff7f50, #87cefa);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 8px;
+        cursor: pointer;
+      ">Continue</button>
+    </div>
+
+    <button id="start-button" style="
+      display: none;
+      font-size: 24px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #ff7f50, #87cefa);
+      color: white;
+      border: none;
+      padding: 20px 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    ">Start Experiment</button>
+  </body>
+  <script>
+    const jsPsych = initJsPsych();
+    let participantData = {
+      age: null,
+      gender: null
+    };
+    let currentBlock = 0;
+    let blockResults = [];
+
+    // Helper functions for the final summary
+    function computeDifficultyTrend(accuracies) {
+      if (accuracies.length < 2) return "consistent performance";
+      
+      const firstHalf = accuracies.slice(0, Math.floor(accuracies.length/2));
+      const secondHalf = accuracies.slice(Math.floor(accuracies.length/2));
+      
+      const firstHalfAvg = firstHalf.reduce((a,b) => a+b, 0) / firstHalf.length;
+      const secondHalfAvg = secondHalf.reduce((a,b) => a+b, 0) / secondHalf.length;
+      
+      const diff = secondHalfAvg - firstHalfAvg;
+      
+      if (diff < -15) return "significant challenges";
+      if (diff < -5) return "some challenges";
+      if (diff >= -5 && diff <= 5) return "consistent performance";
+      if (diff > 5 && diff <= 15) return "good adaptation";
+      return "excellent adaptation";
+    }
+    
+    function getBestBlock(accuracies) {
+      return accuracies.indexOf(Math.max(...accuracies));
+    }
+
+    document.getElementById('continue-button').addEventListener('click', () => {
+      const ageInput = document.getElementById('age');
+      const genderInput = document.getElementById('gender');
+      
+      if (ageInput.value && genderInput.value) {
+        participantData.age = parseInt(ageInput.value);
+        participantData.gender = genderInput.value;
+        
+        document.getElementById('initialization-form').style.display = 'none';
+        document.getElementById('start-button').style.display = 'block';
+      } else {
+        alert('Please fill in all fields before continuing.');
+      }
+    });
+
+    document.getElementById('start-button').addEventListener('click', () => {
+      document.getElementById('start-button').style.display = 'none';
+      
+      fetch('stimuli.json')
+        .then((response) => response.json())
+        .then((stimuliData) => {
+          // Sort stimuli by difficulty (assuming AoA data is available)
+          stimuliData.sort((a, b) => a.aoa_rating - b.aoa_rating);
+          
+          // Group into blocks of 5
+          const blocks = [];
+          for (let i = 0; i < stimuliData.length; i += 5) {
+            blocks.push(stimuliData.slice(i, i + 5));
+          }
+          
+          const timeline = [];
+          
+          // Process each block
+          blocks.forEach((block, blockIndex) => {
+            // Create trials for this block
+            block.forEach((stimulus) => {
+              timeline.push({
+                type: jsPsychHtmlButtonResponse,
+                stimulus: `
+                  <div style="display: flex; justify-content: space-between; gap: 20%;">
+                    <div style="width: 95%;">
+                      <img src="${stimulus.left_image}" style="width: 100%; height: 600px; object-fit: contain; cursor: pointer;" onclick="jsPsych.finishTrial({ response: 0 })">
+                    </div>
+                    <div style="width: 95%;">
+                      <img src="${stimulus.right_image}" style="width: 100%; height: 600px; object-fit: contain; cursor: pointer;" onclick="jsPsych.finishTrial({ response: 1 })">
+                    </div>
+                  </div>
+                  <audio id="audio_${stimulus.trial_id}" autoplay>
+                    <source src="${stimulus.audio_file}" type="audio/wav">
+                  </audio>`,
+                choices: [],
+                on_load: () => {
+                  const audioElement = document.getElementById(`audio_${stimulus.trial_id}`);
+                  if (audioElement) {
+                    audioElement.play().catch((error) => console.error('Audio playback error:', error));
+                  }
+                },
+                on_finish: (data) => {
+                  const isCorrect =
+                    (data.response === 0 && stimulus.correct_answer === 'L') ||
+                    (data.response === 1 && stimulus.correct_answer === 'R');
+                  
+                  // Add trial data
+                  const trialData = {
+                    trial_id: stimulus.trial_id,
+                    word: stimulus.word,
+                    selected_position: data.response === 0 ? 'L' : 'R',
+                    is_correct: isCorrect,
+                    response_time: data.rt,
+                    aoa_rating: stimulus.aoa_rating || 'N/A',
+                    block: blockIndex + 1
+                  };
+                  
+                  jsPsych.data.addDataToLastTrial(trialData);
+                  
+                  // Store for block summary
+                  if (!blockResults[blockIndex]) {
+                    blockResults[blockIndex] = [];
+                  }
+                  blockResults[blockIndex].push(trialData);
+                  
+                  // Simple feedback animation
+                  if (isCorrect) {
+                    const selectedImg = document.querySelector(`img[onclick="jsPsych.finishTrial({ response: ${data.response} })"]`);
+                    if (selectedImg) {
+                      selectedImg.style.transition = 'transform 0.5s';
+                      selectedImg.style.transform = 'scale(1.1)';
+                      setTimeout(() => {
+                        selectedImg.style.transform = 'scale(1)';
+                      }, 500);
+                    }
+                  }
+                },
+              });
+            });
+            
+            // Add block summary screen after every 5 items
+            timeline.push({
+              type: jsPsychHtmlButtonResponse,
+              stimulus: function() {
+                const currentBlockData = blockResults[blockIndex] || [];
+                const correctCount = currentBlockData.filter(item => item.is_correct).length;
+                const totalCount = currentBlockData.length;
+                const accuracy = totalCount > 0 ? (correctCount / totalCount * 100).toFixed(1) : 0;
+                
+                // Create summary table
+                let summaryHTML = `
+                  <div style="max-width: 800px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+                    <h2>Block ${blockIndex + 1} Results</h2>
+                    <div style="background: linear-gradient(to right, #f5f7fa, #c3cfe2); border-radius: 8px; padding: 15px; margin-bottom: 20px;">
+                      <h3>Overall Performance</h3>
+                      <p>Correct answers: ${correctCount}/${totalCount} (${accuracy}%)</p>
+                      <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; height: 20px; margin-top: 10px;">
+                        <div style="width: ${accuracy}%; background: linear-gradient(to right, #87cefa, #ff7f50); height: 20px; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    
+                    <h3>Word-by-Word Results</h3>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                      <thead>
+                        <tr style="background-color: #f2f2f2;">
+                          <th style="padding: 12px; text-align: left; border-bottom: 2px solid #ddd;">Word</th>
+                          <th style="padding: 12px; text-align: center; border-bottom: 2px solid #ddd;">Age of Acquisition</th>
+                          <th style="padding: 12px; text-align: center; border-bottom: 2px solid #ddd;">Result</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                `;
+                
+                currentBlockData.forEach(item => {
+                  const resultColor = item.is_correct ? '#4CAF50' : '#FF5252';
+                  const resultText = item.is_correct ? '✓ Correct' : '✗ Incorrect';
+                  
+                  summaryHTML += `
+                    <tr>
+                      <td style="padding: 12px; border-bottom: 1px solid #ddd;">${item.word}</td>
+                      <td style="padding: 12px; text-align: center; border-bottom: 1px solid #ddd;">${item.aoa_rating}</td>
+                      <td style="padding: 12px; text-align: center; border-bottom: 1px solid #ddd; color: ${resultColor}; font-weight: bold;">${resultText}</td>
+                    </tr>
+                  `;
+                });
+                
+                summaryHTML += `
+                      </tbody>
+                    </table>
+                    
+                    <div style="margin-top: 30px;">
+                      <p><strong>Next Block:</strong> ${blockIndex < blocks.length - 1 ? 'Words will increase in difficulty' : 'This was the final block'}</p>
+                    </div>
+                  </div>
+                `;
+                
+                return summaryHTML;
+              },
+              choices: ['Continue to Next Block'],
+            });
+          });
+          
+          // Final summary screen
+          timeline.push({
+            type: jsPsychHtmlButtonResponse,
+            stimulus: function() {
+              const allData = jsPsych.data.get().filter({trial_id: /./}).values();
+              const correctCount = allData.filter(item => item.is_correct).length;
+              const totalCount = allData.length;
+              const overallAccuracy = totalCount > 0 ? (correctCount / totalCount * 100).toFixed(1) : 0;
+              
+              // Group results by blocks for visualization
+              const blockAccuracies = [];
+              for (let i = 0; i < blockResults.length; i++) {
+                const blockData = blockResults[i] || [];
+                const blockCorrect = blockData.filter(item => item.is_correct).length;
+                const blockTotal = blockData.length;
+                const blockAccuracy = blockTotal > 0 ? (blockCorrect / blockTotal * 100).toFixed(1) : 0;
+                blockAccuracies.push(parseFloat(blockAccuracy));
+              }
+              
+              return `
+                <div style="max-width: 800px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+                  <h2>Experiment Complete!</h2>
+                  <div style="background: linear-gradient(to right, #f5f7fa, #c3cfe2); border-radius: 8px; padding: 20px; margin-bottom: 30px;">
+                    <h3>Overall Performance</h3>
+                    <p>Total correct answers: ${correctCount}/${totalCount} (${overallAccuracy}%)</p>
+                    <p>Child's age: ${participantData.age} years</p>
+                    <div style="width: 100%; background-color: #e0e0e0; border-radius: 5px; height: 30px; margin-top: 15px;">
+                      <div style="width: ${overallAccuracy}%; background: linear-gradient(to right, #87cefa, #ff7f50); height: 30px; border-radius: 5px;"></div>
+                    </div>
+                  </div>
+                  
+                  <h3>Performance by Difficulty Level</h3>
+                  <div style="display: flex; justify-content: space-between; height: 200px; margin-top: 20px; align-items: flex-end;">
+                    ${blockAccuracies.map((accuracy, index) => `
+                      <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                        <div style="width: 80%; background: linear-gradient(to top, #87cefa, #ff7f50); height: ${accuracy * 1.5}px;"></div>
+                        <div style="margin-top: 10px;">Block ${index + 1}</div>
+                        <div style="font-weight: bold;">${accuracy}%</div>
+                      </div>
+                    `).join('')}
+                  </div>
+                  
+                  <div style="margin-top: 40px;">
+                    <h3>Interpretation</h3>
+                    <p>This assessment indicates that the child:</p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="margin-bottom: 10px;">✓ Has strong recognition of ${overallAccuracy >= 80 ? 'most' : 'some'} age-appropriate vocabulary</li>
+                      <li style="margin-bottom: 10px;">✓ Shows ${computeDifficultyTrend(blockAccuracies)} with increasing word difficulty</li>
+                      <li style="margin-bottom: 10px;">✓ Responded most accurately to words in Block ${getBestBlock(blockAccuracies) + 1}</li>
+                    </ul>
+                  </div>
+                  
+                  <button id="download-results" style="
+                    font-size: 16px;
+                    background: linear-gradient(to right, #87cefa, #4682B4);
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-top: 30px;
+                  ">Download Results</button>
+                </div>
+              `;
+            },
+            choices: ['Finish'],
+            on_finish: () => {
+              const results = jsPsych.data.get().json();
+              console.log('Results:', results);
+              // Add event listener for download button
+              document.getElementById('download-results').addEventListener('click', () => {
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(results);
+                const downloadAnchorNode = document.createElement('a');
+                downloadAnchorNode.setAttribute("href", dataStr);
+                downloadAnchorNode.setAttribute("download", "word_comprehension_results.json");
+                document.body.appendChild(downloadAnchorNode);
+                downloadAnchorNode.click();
+                downloadAnchorNode.remove();
+              });
+            },
+          });
+          
+          jsPsych.run(timeline);
+        })
+        .catch((error) => console.error('Error loading stimuli data:', error));
+    });
+  </script>
+</html>
