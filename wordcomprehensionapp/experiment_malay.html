@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word comprehension task</title>
+    <script src="jspsych/jspsych.js"></script>
+    <script src="jspsych/plugin-html-button-response.js"></script>
+    <link href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        let currentUtterance = null; // Store the current speech utterance
+        let audioStartTime = null; // Store the audio onset time
+        let imageOnsetTime = null; // Store the image onset time
+        let trialTimeout = null; // Track the timeout for each trial
+        let femaleVoice = null; // Store the selected female voice
+
+        // Function to initialize and select a female voice
+        const initializeVoices = () => {
+        const voices = window.speechSynthesis.getVoices();
+        femaleVoice = voices.find(voice => voice.lang === 'en-US' && (voice.name.toLowerCase().includes('female') || voice.name.toLowerCase().includes('woman')));
+          if (!femaleVoice && voices.length > 0) {
+            // Use the first available voice if no female voice is found
+            femaleVoice = voices[0];
+            console.warn(`Female voice not found. Defaulting to: ${femaleVoice.name}`);
+          } else if (!femaleVoice) {
+            console.error('No voices available on this system.');
+          } else {
+            console.log('Female voice selected:', femaleVoice.name);
+          }
+        };
+
+        // Ensure voices are initialized at the start
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+          speechSynthesis.onvoiceschanged = initializeVoices;
+        } else {
+          initializeVoices();
+        }
+
+        // Ensure voices are initialized at the start
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+          speechSynthesis.onvoiceschanged = initializeVoices;
+        } else {
+          initializeVoices();
+        }
+
+        function preloadImages(urls) {
+          const promises = urls.map((url) => {
+            return new Promise((resolve, reject) => {
+              const img = new Image();
+              img.onload = () => resolve(url);
+              img.onerror = reject;
+              img.src = url;
+            });
+          });
+          return Promise.all(promises);
+        }
+
+        function speakText(word, isVerb = false) {
+          if ('speechSynthesis' in window) {
+            // Translate word to Malay (dummy translation for demonstration)
+            const translation = isVerb
+              ? `Sentuh ${word}. Siapa yang ${word}? Ada seseorang sedang ${word}.`
+              : `Sentuh ${word}. Itu adalah ${word}. Ada ${word} di sana.`;
+
+            const utterance = new SpeechSynthesisUtterance(translation);
+            currentUtterance = utterance; // Track the current utterance
+
+            // Set the Malay voice if available
+            if (malayVoice) {
+              utterance.voice = malayVoice;
+            }
+
+            // Configure pitch, rate, and language
+            utterance.pitch = 1.0;
+            utterance.rate = 0.8;
+            utterance.lang = 'en-US';
+
+            utterance.onstart = () => {
+              audioStartTime = performance.now(); // Capture the audio onset time
+              console.log('Audio started at:', audioStartTime);
+            };
+
+            utterance.onerror = (event) => {
+              console.error('Speech synthesis error:', event.error);
+            };
+
+            console.log(`Speaking (Malay): ${translation}`);
+            window.speechSynthesis.speak(utterance);
+          } else {
+            console.warn('Speech synthesis not supported in this browser.');
+          }
+        }
+
+        document.getElementById('start-button').addEventListener('click', () => {
+          document.getElementById('start-button').style.display = 'none';
+
+          const jsPsych = initJsPsych(); // Ensure jsPsych is initialized
+
+          const imageUrls = [
+            "images/dog.png", "images/sock.png", "images/spoon.png", "images/cheese.png",
+            "images/head.png", "images/ball.png", "images/close.png", "images/wearhat.png",
+            "images/cat.png", "images/rice.png", "images/hand.png", "images/bread.png",
+            "images/clap.png", "images/liedown.png", "images/milk.png", "images/foot.png",
+            "images/car.png", "images/shoe.png", "images/sleep.png", "images/sit.png",
+            "images/pillow.png", "images/diaper.png", "images/mouth.png", "images/book.png",
+            "images/hug.png", "images/wear.png", "images/hat.png", "images/pencil.png",
+            "images/nose.png", "images/door.png", "images/comb.png", "images/strawberry.png",
+            "images/water.png", "images/flower.png", "images/eye.png", "images/toothbrush.png",
+            "images/stand.png", "images/eat.png", "images/pants.png", "images/cup.png"
+          ];
+
+          preloadImages(imageUrls)
+            .then(() => {
+              console.log('All images preloaded successfully');
+
+              fetch('stimuli.json')
+                .then((response) => {
+                  if (!response.ok) {
+                    throw new Error(`Failed to load stimuli.json: ${response.statusText}`);
+                  }
+                  return response.json();
+                })
+                .then((stimuliData) => {
+                  console.log('Stimuli data loaded:', stimuliData);
+
+                  const trials = stimuliData.map((stimulus) => {
+                    console.log('Processing stimulus:', stimulus);
+
+                    return {
+                      type: jsPsychHtmlButtonResponse,
+                      stimulus: `
+                        <div style="display: flex; justify-content: space-between; gap: 20%;">
+                          <div id="left-image" style="width: 95%; height: 600px; overflow: hidden; position: relative; cursor: pointer;">
+                            <img 
+                              src="${stimulus.left_image}" 
+                              style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+                            />
+                          </div>
+                          <div id="right-image" style="width: 95%; height: 600px; overflow: hidden; position: relative; cursor: pointer;">
+                            <img 
+                              src="${stimulus.right_image}" 
+                              style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+                            />
+                          </div>
+                        </div>
+                      `,
+                      choices: [], // No buttons displayed
+                      on_load: () => {
+                        try {
+                          imageOnsetTime = performance.now(); // Capture image onset time
+
+                          // Add delay before starting the audio
+                          setTimeout(() => {
+                            console.log(`Attempting to speak the word: ${stimulus.word}`);
+                            speakText(stimulus.word, stimulus.verb === 'yes');
+                          }, 1000); // 1 second delay before audio starts
+
+                          // Add timeout to end the trial after 8000 ms
+                          trialTimeout = setTimeout(() => {
+                            console.log('Trial timed out after 8000 ms');
+                            jsPsych.finishTrial({ response: null, timed_out: true });
+                          }, 8000);
+
+                          // Add event listeners for click responses
+                          document.getElementById('left-image').addEventListener('click', () => {
+                            const elapsedTime = performance.now() - imageOnsetTime;
+                            if (elapsedTime >= 2000) { // Check if 2000ms have passed since image onset
+                              const responseTime = audioStartTime ? performance.now() - audioStartTime : null;
+                              console.log(`Left image clicked. Response time from audio onset: ${responseTime} ms`);
+                              if (currentUtterance) {
+                                window.speechSynthesis.cancel(); // Stop the current audio
+                              }
+                              clearTimeout(trialTimeout); // Clear the timeout
+                              jsPsych.finishTrial({ response: 0, rt_from_audio_onset: responseTime, timed_out: false });
+                            } else {
+                              console.log('Click ignored: Tapping disabled for the first 2000ms from image onset.');
+                            }
+                          });
+
+                          document.getElementById('right-image').addEventListener('click', () => {
+                            const elapsedTime = performance.now() - imageOnsetTime;
+                            if (elapsedTime >= 2000) { // Check if 2000ms have passed since image onset
+                              const responseTime = audioStartTime ? performance.now() - audioStartTime : null;
+                              console.log(`Right image clicked. Response time from audio onset: ${responseTime} ms`);
+                              if (currentUtterance) {
+                                window.speechSynthesis.cancel(); // Stop the current audio
+                              }
+                              clearTimeout(trialTimeout); // Clear the timeout
+                              jsPsych.finishTrial({ response: 1, rt_from_audio_onset: responseTime, timed_out: false });
+                            } else {
+                              console.log('Click ignored: Tapping disabled for the first 2000ms from image onset.');
+                            }
+                          });
+                        } catch (error) {
+                          console.error('Error in text-to-speech or event listeners:', error);
+                        }
+                      },
+                      on_finish: (data) => {
+                        const isCorrect =
+                          (data.response === 0 && stimulus.correct_answer === 'L') ||
+                          (data.response === 1 && stimulus.correct_answer === 'R');
+                        jsPsych.data.addDataToLastTrial({
+                          trial_id: stimulus.trial_id,
+                          word: stimulus.word,
+                          selected_position: data.response === 0 ? 'L' : 'R',
+                          is_correct: isCorrect,
+                          response_time: data.rt,
+                          rt_from_audio_onset: data.rt_from_audio_onset || null,
+                          timed_out: data.timed_out || false,
+                        });
+                      },
+                      post_trial_gap: 1000, // 1 second delay between trials
+                    };
+                  });
+
+                  const finalScreen = {
+                    type: jsPsychHtmlButtonResponse,
+                    stimulus: '<p>Thank you for completing the task!</p>',
+                    choices: ['Finish'],
+                    on_finish: () => {
+                      const results = jsPsych.data.get().json();
+                      console.log('Results:',
+ results);
+                    },
+                  };
+
+                  jsPsych.run([...trials, finalScreen]);
+                })
+                .catch((error) => console.error('Error loading stimuli data:', error));
+            })
+            .catch((err) => console.error('Error preloading images:', err));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="start-button" style="
+      font-size: 24px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #ff7f50, #87cefa);
+      color: white;
+      border: none;
+      padding: 20px 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    ">Start Experiment</button>
+  </body>
+</html>
