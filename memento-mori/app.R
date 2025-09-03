@@ -1,8 +1,5 @@
 # app.R
 library(shiny)
-library(lubridate)
-library(ggplot2)
-library(scales)
 
 make_boxes_data <- function(dob, expected_age, granularity) {
   start_date <- as.Date(dob)
@@ -20,13 +17,14 @@ make_boxes_data <- function(dob, expected_age, granularity) {
     total_units <- ceiling(expected_age * 12)
     n_cols <- 12
     
-    # Use floor_date consistently for sequence and index
-    month_start <- floor_date(start_date, "month")
+    # Start from the first day of the birth month
+    month_start <- as.Date(format(start_date, "%Y-%m-01"))
     dates <- seq.Date(month_start, by = "month", length.out = total_units)
     
-    # Current month index
-    current_month_floor <- floor_date(today, "month")
-    mi <- interval(month_start, current_month_floor) %/% months(1) + 1
+    # Calculate month index difference
+    year_diff <- as.integer(format(today, "%Y")) - as.integer(format(month_start, "%Y"))
+    month_diff <- as.integer(format(today, "%m")) - as.integer(format(month_start, "%m"))
+    mi <- year_diff * 12 + month_diff + 1
     current_idx <- if (mi > 0 && mi <= total_units) mi else NA
   }
   
@@ -114,20 +112,15 @@ server <- function(input, output, session) {
 
   output$grid_plot <- renderPlot({
     d <- df()
-    ggplot(d, aes(x = col, y = -row)) +
-      geom_tile(aes(fill = status),
-                width = 0.9, height = 0.9,
-                color = "white", size = 0.2) +
-      scale_fill_manual(values = c(
-        "lived"   = "#3498db",
-        "future"  = "#ecf0f1",
-        "current" = "#e74c3c"
-      ), guide = "none") +
-      theme_void() +
-      theme(
-        plot.background  = element_rect(fill = "transparent", color = NA),
-        panel.background = element_rect(fill = "transparent", color = NA)
-      )
+    par(mar = c(0, 0, 0, 0))
+    plot(NA, xlim = c(0, max(d$col) + 1), ylim = c(-max(d$row) - 1, 0),
+         xaxs = "i", yaxs = "i", axes = FALSE, xlab = "", ylab = "")
+    
+    colors <- ifelse(d$status == "lived", "#3498db",
+              ifelse(d$status == "current", "#e74c3c", "#ecf0f1"))
+    
+    rect(d$col - 0.45, -d$row - 0.45, d$col + 0.45, -d$row + 0.45,
+         col = colors, border = "white", lwd = 0.5)
   })
 }
 
