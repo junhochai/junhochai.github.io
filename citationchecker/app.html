@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="footer">
+            <div style="padding: 25px; background: #f0f4ff; border-radius: 8px; border-left: 4px solid #667eea; margin-bottom: 20px;">
+                <div style="font-size: 0.85em; color: #555; line-height: 1.8;">
+                    <strong>Status:</strong> In active development | Feedback: <a href="mailto:junhoc94@gmail.com" style="color: #667eea; font-weight: 600;">junhoc94@gmail.com</a><br>
+                    <strong>Disclaimer:</strong> For educational support only; verify important citations manually.<br>
+                    <strong>Citation Verification Tool</strong> by Chai Jun Ho (2025) | <a href="https://opensource.org/license/mit" target="_blank" rel="noopener noreferrer" style="color: #667eea; font-weight: 600;">MIT License</a> 
+                    [<a href="./MIT-License.md" target="_blank" rel="noopener noreferrer" style="color: #667eea;">📄 Full License</a>] <br>
+                    <strong>Citation:</strong> Chai, J. H. (2025). <em>Citation verification tool (Version 1.0) [Web application]</em>. <a href="https://junhochai.github.io/citationchecker.html" target="_blank"> https://junhochai.github.io/citationchecker.html </a><br>
+                    <strong>Data:</strong> Crossref & OpenAlex APIs (176M+ works) <br>
+                </div>
+            </div>
+        </div>
+
     <title>Citation Verification Tool</title>
     <style>
         * {
@@ -559,21 +572,6 @@
             <h3>No citations loaded yet</h3>
             <p>Select a format, paste citations, and click "Verify Citations" to get started</p>
         </div>
-
-        <div class="footer">
-            <div style="padding: 25px; background: #f0f4ff; border-radius: 8px; border-left: 4px solid #667eea; margin-bottom: 20px;">
-                <div style="font-size: 0.85em; color: #555; line-height: 1.8;">
-                    <strong>Citation Verification Tool</strong> by Chai Jun Ho (2025)<br>
-                    <a href="https://opensource.org/license/mit" target="_blank" rel="noopener noreferrer" style="color: #667eea; font-weight: 600;">MIT License</a> • 
-                    <strong>Citation:</strong> Chai, J. H. (2025). <em>Citation verification tool (Version 1.0) [Web application]</em>. <a href="https://junhochai.github.io/citationchecker.html" target="_blank"> https://junhochai.github.io/citationchecker.html </a>
-                    <br>
-                    <strong>Data:</strong> Crossref & OpenAlex APIs (176M+ works) • 
-                    <strong>Disclaimer:</strong> For educational support only; verify important citations manually.<br>
-                    <strong>Status:</strong> In active development • Feedback: <a href="mailto:junhoc94@gmail.com" style="color: #667eea; font-weight: 600;">junhoc94@gmail.com</a>
-                </div>
-            </div>
-            <p style="font-size: 0.85em;">🔒 All verification happens in your browser • No data is sent to external servers</p>
-        </div>
     </div>
 
     <script>
@@ -596,10 +594,10 @@
                         hasDOI: false,
                     };
 
-                    // Extract DOI FIRST (user-supplied, priority) - FIXED REGEX for parentheses
-                    let doiMatch = text.match(/(?:https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:\s|$)/i);
-                    if (doiMatch && doiMatch[1]) {
-                        citation.doi = doiMatch[1].trim();
+                    // Extract DOI FIRST (user-supplied, priority) - handles [url], url, and doi: formats
+                    let doiMatch = text.match(/[\[\s]*(https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:[\]\s]|$)/i);
+                    if (doiMatch && doiMatch[2]) {
+                        citation.doi = doiMatch[2].trim();
                         citation.hasDOI = true;
                     }
 
@@ -646,10 +644,10 @@
                         hasDOI: false,
                     };
 
-                    // Extract DOI FIRST - FIXED REGEX for parentheses
-                    let doiMatch = text.match(/(?:https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:\s|$)/i);
-                    if (doiMatch && doiMatch[1]) {
-                        citation.doi = doiMatch[1].trim();
+                    // Extract DOI FIRST - handles [url], url, and doi: formats
+                    let doiMatch = text.match(/[\[\s]*(https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:[\]\s]|$)/i);
+                    if (doiMatch && doiMatch[2]) {
+                        citation.doi = doiMatch[2].trim();
                         citation.hasDOI = true;
                     }
 
@@ -699,10 +697,10 @@
                         hasDOI: false,
                     };
 
-                    // Extract DOI FIRST - FIXED REGEX for parentheses
-                    let doiMatch = text.match(/(?:https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:\s|$)/i);
-                    if (doiMatch && doiMatch[1]) {
-                        citation.doi = doiMatch[1].trim();
+                    // Extract DOI FIRST - handles [url], url, and doi: formats
+                    let doiMatch = text.match(/[\[\s]*(https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:[\]\s]|$)/i);
+                    if (doiMatch && doiMatch[2]) {
+                        citation.doi = doiMatch[2].trim();
                         citation.hasDOI = true;
                     }
 
@@ -747,10 +745,10 @@
                         hasDOI: false,
                     };
 
-                    // Extract DOI FIRST - FIXED REGEX for parentheses
-                    let doiMatch = text.match(/(?:https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:\s|$)/i);
-                    if (doiMatch && doiMatch[1]) {
-                        citation.doi = doiMatch[1].trim();
+                    // Extract DOI FIRST - handles [url], url, and doi: formats
+                    let doiMatch = text.match(/[\[\s]*(https?:\/\/doi\.org\/|doi:\s*)(10\.\d+\/\S+?)(?:[\]\s]|$)/i);
+                    if (doiMatch && doiMatch[2]) {
+                        citation.doi = doiMatch[2].trim();
                         citation.hasDOI = true;
                     }
 
