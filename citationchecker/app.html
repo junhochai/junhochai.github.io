@@ -1248,28 +1248,28 @@
         }
 
         function loadExample() {
-            const selectedFormat = document.querySelector('input[name="citation-format"]:checked').value;
-            
-            const examples = {
-                'apa': `Abu-Zhaya, R., Seidl, A., & Cristia, A. (2017). Multimodal infant-directed communication: How caregivers combine tactile and linguistic cues. Journal of Child Language, 44(5), 1088–1116. https://doi.org/10.1017/S0305000916000416
-Chen, L., Lee, M., & Park, S. (2019). Language acquisition in multilingual children. Developmental Psychology, 55(2), 234-256.
+    const selectedFormat = document.querySelector('input[name="citation-format"]:checked').value;
+    
+    const examples = {
+        'apa': `Chai, J. H., & Ko, E. S. (2025). Input Properties Shape Word Segmentation Performance Across Child Development: A Computational Modeling Study. Infancy, 30(5), e70046. https://doi.org/10.1111/infa.70046
+Chai, J. H., Low, H. M., Wong, T. P., Onnis, L., & Mayor, J. (2021). Extra-linguistic modulation of the English noun-bias: Evidence from Malaysian bilingual infants and toddlers. Journal of Cultural Cognitive Science, 5(1), 49-64. https://doi.org/10.1007/s41809-021-00078-5
 Brown, R., & Davis, K. (2018). Parental responsiveness and child outcomes. Early Childhood Research Quarterly, 42, 156-169.`,
-                'harvard': `Abu-Zhaya, R., Seidl, A. and Cristia, A., 2017. Multimodal infant-directed communication. Journal of Child Language, 44(5), pp.1088–1116. doi: 10.1017/S0305000916000416
+        'harvard': `Abu-Zhaya, R., Seidl, A. and Cristia, A., 2017. Multimodal infant-directed communication. Journal of Child Language, 44(5), pp.1088–1116. doi: 10.1017/S0305000916000416
 Chen, L., Lee, M. and Park, S., 2019. Language acquisition in multilingual children. Developmental Psychology, 55(2), pp.234-256.
 Brown, R. and Davis, K., 2018. Parental responsiveness and child outcomes. Early Childhood Research Quarterly, 42, pp.156-169.`,
-                'mla': `Abu-Zhaya, Ronit, et al. "Multimodal Infant-Directed Communication." Journal of Child Language, vol. 44, no. 5, 2017, pp. 1088–1116.
+        'mla': `Abu-Zhaya, Ronit, et al. "Multimodal Infant-Directed Communication." Journal of Child Language, vol. 44, no. 5, 2017, pp. 1088–1116.
 Chen, Ling, et al. "Language Acquisition in Multilingual Children." Developmental Psychology, vol. 55, no. 2, 2019, pp. 234-256.
 Brown, Robert, and Kathryn Davis. "Parental Responsiveness and Child Outcomes." Early Childhood Research Quarterly, vol. 42, 2018, pp. 156-169.`,
-                'chicago': `Abu-Zhaya, Ronit, Adriane Seidl, and Alejandrina Cristia. "Multimodal Infant-Directed Communication." Journal of Child Language 44, no. 5 (2017): 1088–1116. https://doi.org/10.1017/S0305000916000416
-Chen, Ling, Mei Lee, and Sungwon Park. "Language Acquisition in Multilingual Children." Developmental Psychology 55, no. 2 (2019): 234-256.
+        'chicago': `Chai, Jun Ho, and Eon-Suk Ko. "Input Properties Shape Word Segmentation Performance Across Child Development: A Computational Modeling Study." Infancy 30, no. 5 (2025): e70046. https://doi.org/10.1111/infa.70046
+Chai, Jun Ho, Hui Min Low, Theng Ping Wong, Lukas Onnis, and Julien Mayor. "Extra-linguistic Modulation of the English Noun-Bias: Evidence from Malaysian Bilingual Infants and Toddlers." Journal of Cultural Cognitive Science 5, no. 1 (2021): 49–64. https://doi.org/10.1007/s41809-021-00078-5
 Brown, Robert, and Kathryn Davis. "Parental Responsiveness and Child Outcomes." Early Childhood Research Quarterly 42 (2018): 156-169.`,
-                'auto': `Abu-Zhaya, R., Seidl, A., & Cristia, A. (2017). Multimodal infant-directed communication: How caregivers combine tactile and linguistic cues. Journal of Child Language, 44(5), 1088–1116. https://doi.org/10.1017/S0305000916000416
-Chen, L., Lee, M., & Park, S. (2019). Language acquisition in multilingual children. Developmental Psychology, 55(2), 234-256.
+        'auto': `Chai, J. H., & Ko, E. S. (2025). Input Properties Shape Word Segmentation Performance Across Child Development: A Computational Modeling Study. Infancy, 30(5), e70046. https://doi.org/10.1111/infa.70046
+Chai, J. H., Low, H. M., Wong, T. P., Onnis, L., & Mayor, J. (2021). Extra-linguistic modulation of the English noun-bias: Evidence from Malaysian bilingual infants and toddlers. Journal of Cultural Cognitive Science, 5(1), 49-64. https://doi.org/10.1007/s41809-021-00078-5
 Brown, R., & Davis, K. (2018). Parental responsiveness and child outcomes. Early Childhood Research Quarterly, 42, 156-169.`
-            };
+    };
 
-            document.getElementById('citations').value = examples[selectedFormat] || examples['auto'];
-        }
+    document.getElementById('citations').value = examples[selectedFormat] || examples['auto'];
+}
 
         function clearInput() {
             document.getElementById('citations').value = '';
