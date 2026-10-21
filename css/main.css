@@ -1,42 +1,111 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+:root {
+    --ink: #25322c;
+    --muted: #68766e;
+    --line: #dce4df;
+    --accent: #2c6c74;
+    --accent-hover: #a14b26;
+    --paper: #fbfcfa;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 48px auto 34px;
+    width: min(92%, 920px);
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Arial, sans-serif;
+}
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 0;
     list-style: none;
     font-weight: bold;
 }
+
+nav {
+    margin-bottom: 42px;
+    border-bottom: 1px solid var(--line);
+}
+
+nav ul {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0;
 }
+
+nav ul .site-name {
+    margin-right: auto;
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+
+nav .site-name a {
+    color: var(--ink);
+    letter-spacing: -0.015em;
+}
+
+nav ul li:not(.site-name) a {
+    font-size: 0.92rem;
+}
+
 a {
+    color: var(--accent);
     text-decoration: none;
-    color: #4986e8;
 }
+
 a:hover {
+    color: var(--accent-hover);
     text-decoration: underline;
-    color: #ff9900;
 }
-a:link {
-  color: #4986e8;
-  background-color: transparent;
-  text-decoration: none;
+
+a:focus-visible {
+    outline: 2px solid var(--accent-hover);
+    outline-offset: 3px;
 }
+
 h1 {
+    font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Arial, sans-serif;
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
+.blurb {
+    max-width: 790px;
+}
+
 p {
-    font-size: 1em;
-    line-height: 1.4em;
-    color: #333;
+    margin: 0 0 1.35rem;
+    color: var(--ink);
+    font-size: 1.05rem;
+    line-height: 1.72;
 }
+
+.blurb p:first-child {
+    color: var(--muted);
+    font-size: 1.15rem;
+    line-height: 1.65;
+}
+
 footer {
-    border-top: 1px solid #d5d5d5;
+    max-width: 790px;
+    margin-top: 44px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
     font-size: .8em;
+}
+
+footer ul {
+    margin: 0;
 }
 
 ul.posts { 
@@ -46,4 +115,27 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+@media (max-width: 680px) {
+    body {
+        margin-top: 28px;
+    }
+
+    nav {
+        margin-bottom: 30px;
+    }
+
+    nav ul {
+        gap: 8px 14px;
+    }
+
+    nav ul .site-name {
+        flex-basis: 100%;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
 }

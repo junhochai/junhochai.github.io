@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>{{ page.title }}</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>{{ page.title | default: site.name }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css" href="{{ '/css/main.css' | relative_url }}">
 		</head>
 		<body>
 			<nav>
 	    		<ul>
-	        		<li style="font-size: 24px; font-weight: bold;"><a style="text-decoration: none; color: black;"><a href="https://junhochai.github.io">Jun Ho Chai</a></li>
+	        		<li class="site-name"><a href="{{ '/' | relative_url }}">Jun Ho Chai</a></li>
 	        		<!-- <li><a href="/about">About</a></li> -->
-				<li><a href="/files/ChaiJunHo_CV.pdf">CV</a></li>
+				<li><a href="{{ '/files/ChaiJunHo_CV.pdf' | relative_url }}">CV</a></li>
 	        		<li><a href="https://scholar.google.com/citations?user=Mdylz0QAAAAJ">Papers</a></li>
-        			<li><a href="tutorials.html">Tutorials</a></li>
-        			<li><a href="lectures.html">Lectures</a></li>
-        			<li><a href="citationchecker/app.html">Citation Checker</a></li>
+	        		<li><a href="{{ '/tutorials.html' | relative_url }}">Tutorials</a></li>
+	        		<li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
+	        		<li><a href="{{ '/citationchecker/app.html' | relative_url }}">Citation Checker</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
